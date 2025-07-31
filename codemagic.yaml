@@ -11,13 +11,10 @@ workflows:
         CAPACITOR_ANDROID_GRADLE_VERSION: "8.4"
         # Build configuration
         BUILD_VARIANT: "release"
-        # Keystore configuration (if using manual approach)
-        # CM_KEYSTORE: Encrypted(...)
-        # CM_KEYSTORE_PASSWORD: Encrypted(...)
-        # CM_KEY_PASSWORD: Encrypted(...)
-        # CM_KEY_ALIAS: upload
+      groups:
+        - keystore  # Group-based keystore access
       android_signing:
-        - ilmbuds_keystore
+        - keystore_reference: "ilmbuds_keystore"
       node: 20
     cache:
       cache_paths:
@@ -41,15 +38,26 @@ workflows:
         script: |
           npx cap sync android
           
-      - name: Set up Android signing
+      - name: Debug and Set up Android signing
         script: |
-          # Debug keystore configuration
+          echo "=== KEYSTORE DEBUG INFO ==="
           echo "Available keystore files:"
-          find . -name "*.keystore" -o -name "*.jks" 2>/dev/null || echo "No keystore files found"
-          echo "Environment variables:"
-          env | grep -i key || echo "No key-related env vars"
-          echo "CM variables:"
-          env | grep CM_ || echo "No CM_ variables"
+          find . -name "*.keystore" -o -name "*.jks" 2>/dev/null || echo "No keystore files found in workspace"
+          
+          echo "Environment variables (keystore related):"
+          env | grep -i key | head -10 || echo "No key-related env vars"
+          
+          echo "CM_ variables:"
+          env | grep CM_ | head -10 || echo "No CM_ variables"
+          
+          echo "FCI_ variables:"  
+          env | grep FCI_ | head -10 || echo "No FCI_ variables"
+          
+          echo "Android signing paths:"
+          ls -la $HOME/.android/ 2>/dev/null || echo "No .android folder"
+          ls -la $HOME/keystores/ 2>/dev/null || echo "No keystores folder"
+          
+          echo "=== END DEBUG ==="
           
       - name: Build Android AAB (Release)
         script: |
