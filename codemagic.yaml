@@ -4,8 +4,6 @@ workflows:
     max_build_duration: 60
     instance_type: mac_mini_m1
     environment:
-      android_signing:
-        - ilmbuds_keystore
       vars:
         # Node.js and build environment
         NODE_VERSION: "20"
@@ -13,6 +11,13 @@ workflows:
         CAPACITOR_ANDROID_GRADLE_VERSION: "8.4"
         # Build configuration
         BUILD_VARIANT: "release"
+        # Keystore configuration (if using manual approach)
+        # CM_KEYSTORE: Encrypted(...)
+        # CM_KEYSTORE_PASSWORD: Encrypted(...)
+        # CM_KEY_PASSWORD: Encrypted(...)
+        # CM_KEY_ALIAS: upload
+      android_signing:
+        - ilmbuds_keystore
       node: 20
     cache:
       cache_paths:
@@ -38,8 +43,13 @@ workflows:
           
       - name: Set up Android signing
         script: |
-          # Keystore will be available via Android signing configuration
-          echo "Keystore configured via Codemagic Android signing"
+          # Debug keystore configuration
+          echo "Available keystore files:"
+          find . -name "*.keystore" -o -name "*.jks" 2>/dev/null || echo "No keystore files found"
+          echo "Environment variables:"
+          env | grep -i key || echo "No key-related env vars"
+          echo "CM variables:"
+          env | grep CM_ || echo "No CM_ variables"
           
       - name: Build Android AAB (Release)
         script: |
