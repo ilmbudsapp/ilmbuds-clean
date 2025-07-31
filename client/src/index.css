@@ -1,0 +1,879 @@
+/* Import fonts - must come first */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+/* Status bar fix styles - DO NOT REMOVE - v8 update */
+:root {
+  --status-bar-height: 40px;
+  --safe-area-inset-top: env(safe-area-inset-top, 40px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+}
+
+/* Enable safe area support for mobile devices */
+@supports (padding-top: env(safe-area-inset-top)) {
+  :root {
+    --status-bar-height: env(safe-area-inset-top, 40px);
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ILMBUDS Original Card Colors - ChatGPT solution using CSS variables and @layer */
+@layer components {
+  .ilmbuds-quiz-card {
+    --tw-bg-opacity: 1;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    box-shadow: 0 15px 30px -10px rgba(102, 126, 234, 0.5) !important;
+  }
+
+  .ilmbuds-stories-card {
+    --tw-bg-opacity: 1;
+    background: linear-gradient(135deg, #ff8c00 0%, #ff4500 100%) !important;
+    box-shadow: 0 15px 30px -10px rgba(255, 140, 0, 0.5) !important;
+  }
+
+  .ilmbuds-quran-card {
+    --tw-bg-opacity: 1;
+    background: linear-gradient(135deg, #4ecdc4 0%, #44a08d 100%) !important;
+    box-shadow: 0 15px 30px -10px rgba(78, 205, 196, 0.5) !important;
+  }
+
+  .ilmbuds-catechism-card {
+    --tw-bg-opacity: 1;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+    box-shadow: 0 15px 30px -10px rgba(240, 147, 251, 0.5) !important;
+  }
+}
+
+/* Dark mode styles */
+.dark {
+  color-scheme: dark;
+}
+
+/* Body padding for fixed navigation and banner */
+body {
+  padding-bottom: 112px; /* 56px navigation + 56px banner */
+}
+
+/* Metallic shimmer animation */
+@keyframes metallic-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Animacije za vatromet */
+@keyframes firework {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  5% {
+    transform: scale(0.1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  75% {
+    transform: scale(1.15);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes fireworkFade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ray {
+  0% {
+    transform: rotate(var(--rotation)) scale(0.1, 0.1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    transform: rotate(var(--rotation)) scale(1, 0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(var(--rotation)) scale(1.2, 0.1);
+    opacity: 0;
+  }
+}
+
+@keyframes spark {
+  0% {
+    transform: translate(var(--translate-x), var(--translate-y)) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  35% {
+    transform: translate(var(--translate-x), var(--translate-y)) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(
+      calc(var(--translate-x) * 1.2),
+      calc(var(--translate-y) * 1.2)
+    ) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes centralSpark {
+  0% {
+    transform: translate(var(--translate-x), var(--translate-y)) scale(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translate(
+      calc(var(--translate-x) * 0.4),
+      calc(var(--translate-y) * 0.4)
+    ) scale(1);
+  }
+  100% {
+    transform: translate(var(--translate-x), var(--translate-y)) scale(0);
+    opacity: 0;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply antialiased bg-background text-foreground;
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    padding-top: var(--status-bar-height);
+  }
+  
+  .font-arabic {
+    font-family: 'Scheherazade New', 'Amiri', serif;
+    direction: rtl;
+  }
+  
+  :root {
+    --primary-dark: #047857;
+  }
+}
+
+/* Modern UI Components */
+@layer components {
+  /* Glass effect containers */
+  .glass-container {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 rounded-xl shadow-lg;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .glass-container-dark {
+    @apply bg-black/50 backdrop-blur-md border border-white/10 rounded-xl shadow-lg;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Sandy texture backgrounds */
+  .sandy-texture-green {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.07' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='1'/%3E%3Ccircle cx='13' cy='13' r='1'/%3E%3Ccircle cx='17' cy='7' r='1'/%3E%3Ccircle cx='7' cy='17' r='1'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .sandy-texture-orange {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.08' fill-rule='evenodd'%3E%3Cpath d='M0 0h4v4H0V0zm0 8h4v4H0V8zm8 0h4v4H8V8zm8 0h4v4h-4V8zm0-8h4v4h-4V0zM8 0h4v4H8V0z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .sandy-texture-purple {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.07' fill-rule='evenodd'%3E%3Cpath d='M2 0h2v2H2V0zm1 1h1v1H3V1zM0 2h2v2H0V2zm1 1h1v1H1V3z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  .sandy-texture-blue {
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.08' fill-rule='evenodd'%3E%3Cpath d='M2.5 5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm5-5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm5 0a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z' fill-opacity='.1'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  /* Modern buttons */
+  .btn-modern {
+    @apply rounded-full px-4 py-2 font-medium transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary-modern {
+    @apply bg-emerald-600 text-white hover:bg-emerald-700 btn-modern focus:ring-emerald-500;
+  }
+  
+  .btn-secondary-modern {
+    @apply bg-white text-emerald-600 hover:bg-gray-50 border border-gray-200 btn-modern focus:ring-emerald-500;
+  }
+  
+  /* Modern cards */
+  .card-modern {
+    @apply rounded-xl overflow-hidden bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+  }
+  
+  /* Modern form inputs */
+  .input-modern {
+    @apply px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring focus:ring-primary/20 transition-all duration-300;
+  }
+}
+
+/* 3D Effect Animations */
+@keyframes shine {
+  0% {
+    background-position: -100% -100%;
+  }
+  50% {
+    background-position: 150% 150%;
+  }
+  100% {
+    background-position: -100% -100%;
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Status bar and mobile safe area utilities */
+.status-bar-spacer {
+  height: var(--status-bar-height);
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.fixed-navbar {
+  padding-top: var(--status-bar-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+/* Mobile safe area utilities */
+.safe-area-top {
+  padding-top: var(--safe-area-inset-top);
+}
+
+.safe-area-bottom {
+  padding-bottom: var(--safe-area-inset-bottom);
+}
+
+.safe-area-left {
+  padding-left: var(--safe-area-inset-left);
+}
+
+.safe-area-right {
+  padding-right: var(--safe-area-inset-right);
+}
+
+/* App content must be below the status bar */
+.app-content {
+  padding-top: var(--status-bar-height);
+  min-height: calc(100vh - var(--status-bar-height));
+  position: relative;
+  z-index: 10;
+}
+
+/* Full-screen container with status bar awareness */
+.fullscreen-container {
+  position: fixed;
+  top: var(--status-bar-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% - var(--status-bar-height));
+  overflow-y: auto;
+  z-index: 20;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Global 3D styles */
+.transform-gpu {
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Hover effects for 3D icons */
+.icon-3d-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Enhanced category card hover effects */
+.bg-white.rounded-xl:hover .text-4xl {
+  transform: translateY(-8px) scale(1.1) !important;
+  /* Removed drop-shadow filter */
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.bg-white.rounded-xl:hover .absolute.blur-\[8px\] {
+  opacity: 0.6;
+  transform: translateY(12px) scale(0.85);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* 3D transitions */
+.transition-3d {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), 
+              filter 0.3s ease, 
+              box-shadow 0.3s ease,
+              opacity 0.3s ease;
+}
+
+/* Removed metallic effects */
+
+/* Arabic Bismillah Text - Bold Clear 3D Design */
+.arabic-bismillah-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.arabic-bismillah {
+  font-family: 'Times New Roman', Arial, serif;
+  font-size: 2.5rem;
+  line-height: 1;
+  text-align: center;
+  direction: rtl;
+  font-weight: 400; /* Lighter weight for more elegant appearance */
+  width: 100%;
+  white-space: nowrap;
+  color: #000000; /* Plain black */
+  background-color: transparent;
+  padding: 1rem 0;
+  letter-spacing: 0.05em; /* Add slight spacing for elegance */
+}
+
+/* Remove all pseudo-elements and animations */
+.arabic-bismillah::before,
+.arabic-bismillah::after {
+  display: none;
+}
+
+/* 3D Title Animation */
+.title-3d {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: #276749;
+  text-shadow: 
+    0px 1px 0px #c2e6ce,
+    0px 2px 0px #a3d9b5,
+    0px 3px 0px #85cc9c,
+    0px 4px 1px #68bf83,
+    0px 5px 2px #4ab26a,
+    0px 6px 3px #2c9e52,
+    0px 7px 10px rgba(0, 0, 0, 0.4),
+    0px 9px 15px rgba(0, 0, 0, 0.2);
+  transform: perspective(500px) rotateX(10deg);
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  filter: drop-shadow(0 0 5px rgba(39, 103, 73, 0.3));
+}
+
+.title-3d:hover {
+  transform: perspective(500px) rotateX(0deg) scale(1.05);
+  text-shadow: 
+    0px 1px 1px #c2e6ce,
+    0px 2px 2px #a3d9b5,
+    0px 3px 3px #85cc9c,
+    0px 4px 4px #68bf83,
+    0px 5px 5px #4ab26a,
+    0px 6px 6px #2c9e52,
+    0px 10px 20px rgba(0, 0, 0, 0.4),
+    0px 15px 30px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(39, 103, 73, 0.4));
+}
+
+/* Add shine effect to title */
+.title-3d::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg, 
+    transparent, 
+    rgba(255, 255, 255, 0.4), 
+    transparent
+  );
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.title-3d:hover::after {
+  left: 100%;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+/* Elegant italicized tagline */
+.modern-tagline {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.35rem;
+  color: #065f46; /* Emerald-800 */
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem auto;
+  transform: scale(1);
+  transition: all 0.4s ease;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  position: relative;
+  z-index: 10;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* Removed the ::before and ::after elements that were adding a line and symbol */
+
+.modern-tagline:hover {
+  transform: scale(1.04);
+  letter-spacing: 0.04em;
+  color: #047857; /* Emerald-700 */
+}
+
+/* Removed hover state for the ::before element */
+
+/* Animation for page load */
+@keyframes pageEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.96);
+    filter: blur(8px);
+  }
+  50% {
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes elementEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtlePopIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation classes */
+.page-entrance {
+  animation: pageEntrance 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.element-entrance {
+  opacity: 0;
+  animation: elementEntrance 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.element-entrance-delay-1 {
+  animation-delay: 0.2s;
+}
+
+.element-entrance-delay-2 {
+  animation-delay: 0.4s;
+}
+
+.element-entrance-delay-3 {
+  animation-delay: 0.6s;
+}
+
+.subtle-pop-in {
+  animation: subtlePopIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Standard fade in (for existing components) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Quiz box metallic styles */
+.quiz-box {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255, 0.3),
+    inset 0 -1px 1px rgba(0,0,0, 0.1),
+    0 4px 8px rgba(0,0,0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.quiz-box:hover {
+  background: linear-gradient(135deg, #10b981 20%, #059669 80%);
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.25));
+  transform: translateY(-2px);
+}
+
+.quiz-box-active {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  filter: drop-shadow(0 10px 20px rgba(5, 150, 105, 0.3));
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255, 0.3),
+    inset 0 -2px 2px rgba(0,0,0, 0.15),
+    0 5px 10px rgba(0,0,0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+.text-shadow-sm {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 
+               0 3px 8px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.03em;
+}
+
+/* Sure Iz Kurana box metallic styles */
+.sura-box {
+  background: linear-gradient(135deg, #e53935 0%, #c62828 100%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255, 0.3),
+    inset 0 -1px 1px rgba(0,0,0, 0.1),
+    0 4px 8px rgba(0,0,0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.sura-box:hover {
+  background: linear-gradient(135deg, #e53935 20%, #c62828 80%);
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.25));
+  transform: translateY(-2px);
+}
+
+.sura-box-active {
+  background: linear-gradient(135deg, #c62828 0%, #b71c1c 100%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  filter: drop-shadow(0 10px 20px rgba(229, 57, 53, 0.3));
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255, 0.3),
+    inset 0 -2px 2px rgba(0,0,0, 0.15),
+    0 5px 10px rgba(0,0,0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+/* Stories box metallic styles */
+.stories-box {
+  background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255, 0.3),
+    inset 0 -1px 1px rgba(0,0,0, 0.1),
+    0 4px 8px rgba(0,0,0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.stories-box:hover {
+  background: linear-gradient(135deg, #0ea5e9 20%, #0284c7 80%);
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.25));
+  transform: translateY(-2px);
+}
+
+.stories-box-active {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  filter: drop-shadow(0 10px 20px rgba(14, 165, 233, 0.3));
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255, 0.3),
+    inset 0 -2px 2px rgba(0,0,0, 0.15),
+    0 5px 10px rgba(0,0,0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+/* Games box metallic styles */
+.games-box {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255, 0.3),
+    inset 0 -1px 1px rgba(0,0,0, 0.1),
+    0 4px 8px rgba(0,0,0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+/* Background pattern for cards */
+.bg-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23000000' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Navigation icon active state */
+.nav-icon-active {
+  filter: drop-shadow(0 0 3px rgba(4, 120, 87, 0.4));
+  transform: translateY(-1px);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.games-box:hover {
+  background: linear-gradient(135deg, #8b5cf6 20%, #7c3aed 80%);
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.25));
+  transform: translateY(-2px);
+}
+
+.games-box-active {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  filter: drop-shadow(0 10px 20px rgba(139, 92, 246, 0.3));
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255, 0.3),
+    inset 0 -2px 2px rgba(0,0,0, 0.15),
+    0 5px 10px rgba(0,0,0, 0.25);
+  position: relative;
+  z-index: 1;
+}
+
+/* Mosque silhouettes for home page backgrounds */
+.mosque-silhouette-green {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='xMidYMid slice'%3E%3Cpath fill='%23ffffff' fill-opacity='0.08' d='M500 40l50 80h-100l50-80zm-90 100h180v60h-180v-60zm-30 80h240v120h-240v-120zm-60 140h360v200h-360v-200zm-40-140h40v120h-40v-120zm440 0h40v120h-40v-120zm-480 280h560v40h-560v-40zm250 60c-10 0-20 10-20 20v120c0 10 10 20 20 20s20-10 20-20v-120c0-10-10-20-20-20z'/%3E%3C/svg%3E");
+}
+
+.mosque-silhouette-orange {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='xMidYMid slice'%3E%3Cpath fill='%23ffffff' fill-opacity='0.08' d='M380 80c0-22.1 17.9-40 40-40h160c22.1 0 40 17.9 40 40v80h60c11 0 20 9 20 20v100c0 11-9 20-20 20h-60v100h100c11 0 20 9 20 20v100c0 11-9 20-20 20H280c-11 0-20-9-20-20V400c0-11 9-20 20-20h100V280h-60c-11 0-20-9-20-20V160c0-11 9-20 20-20h60V80zm80 0v80h80V80h-80zm-80 280v100h80v-60c0-22.1 17.9-40 40-40s40 17.9 40 40v60h80V360h-240z'/%3E%3C/svg%3E");
+}
+
+.mosque-silhouette-purple {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='xMidYMid slice'%3E%3Cpath fill='%23ffffff' fill-opacity='0.08' d='M320 60c0-11 9-20 20-20h320c11 0 20 9 20 20v80c0 11-9 20-20 20h-40v60h60c22.1 0 40 17.9 40 40v260c0 22.1-17.9 40-40 40H320c-22.1 0-40-17.9-40-40V260c0-22.1 17.9-40 40-40h60v-60h-40c-11 0-20-9-20-20V60zm80 100v60h200v-60H400zm-40 160v200h80V320h-80zm120 0v200h40V320h-40zm80 0v200h80V320h-80z'/%3E%3C/svg%3E");
+}
+
+.mosque-silhouette-blue {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000' preserveAspectRatio='xMidYMid slice'%3E%3Cpath fill='%23ffffff' fill-opacity='0.08' d='M500 40l-140 80h280L500 40zM320 140v60h360v-60H320zm20 80v100h320V220H340zm-40 120v180h400V340H300zm-20 200v40h440v-40H280zm180 60c-11 0-20 9-20 20v160c0 11 9 20 20 20s20-9 20-20V420c0-11-9-20-20-20z'/%3E%3C/svg%3E");
+}
+
+/* Status bar fix specific styles */
+.status-bar-spacer {
+  height: var(--status-bar-height);
+  width: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: white;
+}
+
+/* Add this to ensure elements are below status bar */
+.app-content {
+  padding-top: var(--status-bar-height);
+  width: 100%;
+  position: relative;
+}
+
+/* Add this to the end to ensure navbar stays at bottom */
+.fixed-navbar {
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  margin-top: var(--status-bar-height);
+}
+
+/* YouTube iframe container styles */
+.youtube-container {
+  position: relative;
+  overflow: hidden; 
+  background: #000;
+  max-height: 200px;
+}
+
+.youtube-container iframe {
+  border: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 200px;
+}
+
+/* Add specific Android WebView fullscreen support */
+:-webkit-full-screen, 
+:-webkit-full-screen iframe,
+:-webkit-full-screen .youtube-container,
+:-webkit-full-screen .youtube-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 2147483647 !important;
+  background: #000 !important;
+}
+
+:-moz-full-screen,
+:-moz-full-screen iframe,
+:-moz-full-screen .youtube-container,
+:-moz-full-screen .youtube-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 2147483647 !important;
+  background: #000 !important;
+}
+
+:fullscreen,
+:fullscreen iframe,
+:fullscreen .youtube-container,
+:fullscreen .youtube-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 2147483647 !important;
+  background: #000 !important;
+}
+
+/* Android WebView specifični fiksevi */
+.youtube-container iframe.in-fullscreen-mode {
+  position: fixed !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-height: 100vh !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 999999 !important;
+}

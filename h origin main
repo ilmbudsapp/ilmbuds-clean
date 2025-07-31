@@ -1,0 +1,1088 @@
+[33m5201934[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Automate the build process for creating Android application packages
+[33m9f6467c[m Automate app building and file transfer for easier development cycles
+[33me5f747c[m Update the application with fixes and improvements for the latest release
+[33m0ed0758[m Improve ad display and audio playback in the Arabic alphabet section
+[33m27df038[m Update the app to version 7.4 and ensure compatibility with Android 15
+[33m3d9eae5[m Implement custom logo for the application across all device resolutions
+[33m406cb79[m Address user-reported issues, improve ad display, and enhance audio features
+[33mde42893[m Increase the sound volume of letters in the Arabic alphabet learning tool
+[33me4eb434[m Display ads only when they are available for the learning modules
+[33m200262b[m Enable the advertisement to work correctly when navigating to learning pages
+[33m04b6f37[m Improve user experience with interstitial ads and bottom navigation
+[33m5f2d616[m Add tool to generate PNG images for sharing educational cards
+[33mc9d1ba1[m Enhance the quiz category page with a beautiful Islamic background
+[33m8e113d0[m Enhance the appearance of the History of Islam category with a decorative pattern
+[33me1c5beb[m Enhance the History of Islam quiz category with a stunning visual theme
+[33mad2d417[m Clarify communication and action guidelines for the AI assistant
+[33m73450b2[m Improve build process by only transferring updated files from the cloud
+[33m2f8196e[m Achieve successful app build and upload key reset for Google Play Store
+[33m5b8b800[m Verify that the application has been securely signed before distribution
+[33m8a053d5[m Serve application files from the "dist/public" directory for deployment
+[33m0d8e1de[m Address build failures related to dependency resolution for Android release
+[33m3c28665[m Improve project setup and add integrations for enhanced functionality
+[33m38a9f52[m Update Java version used by the project to ensure compatibility
+[33m7901303[m Add instructions for generating new keystore to deploy app to Google Play
+[33m565960d[m Fix build errors by ensuring correct keystore path for app signing
+[33m29cc02f[m Address errors encountered while generating the application bundle for release
+[33m3291d2d[m Update the app's release settings to use the new secure keystore
+[33m057fbd3[m Prepare application for release by updating signing keys for Google Play
+[33m68600b3[m Address key signing issues when creating the app's release bundle
+[33m91985e6[m Diagnose issue where application bundle fails to sign for release
+[33m3e919d2[m Investigate and fix problem encountered when creating the Android release bundle
+[33m96341a1[m Enable the application to be signed automatically upon release builds
+[33m8ca90a1[m Address problem encountered while generating application bundle
+[33m333ce4a[m Disable app signing to allow for easier, unsigned development builds
+[33med8e579[m Disable code and resource shrinking to avoid signing issues
+[33mea6a4f5[m Report successful debug build and identify remaining release issues
+[33maeb65d2[m Update the app signing configuration to use the correct keystore file
+[33mb655ece[m Update the keystore to use a new file for secure app signing
+[33me256ac1[m Address the problem where app publishing fails due to key access issues
+[33m2d6d5de[m Update keystore location for consistent and reliable Android builds
+[33mf4f3904[m Update the key used for signing the application before it is released
+[33mbbca1a6[m Update location of the keystore file to fix app signing during release
+[33m4fb4a49[m Update application signing information to use the latest key
+[33m497a963[m Update the location of the app's secure key for publishing to app stores
+[33m3ec27a4[m Update key details used to digitally sign and secure the application
+[33mc1bf2ec[m Address build failure by resolving character encoding issues in Java files
+[33m9423e50[m Remove advertisement functionality from the application to resolve build errors
+[33m3042a86[m Update keystore file path and document build process in text file
+[33mff8f074[m Address library warnings and deprecated dependencies during installation
+[33m665dcff[m Update build configuration to use new keystore for signing the application
+[33m47f6423[m Fix app build issues and improve Android build process for distribution
+[33mbe0f6ed[m Add explicit instruction to ensure actions are only taken on command
+[33m7ae1b7b[m Improve AdMob functionality and ensure compatibility with native builds
+[33m3d107b6[m Refactor ad management to use a centralized service for easier control
+[33m4367e55[m Show unique identifier for ads displayed within the application
+[33m5c3971f[m Remove test labels from ads and display real ads in the mobile app
+[33mbb8573d[m Disable test mode for rewarded ads to show real advertisements
+[33mdb6c1c4[m Activate real ads to monetize the application and track user engagement
+[33m05331b6[m Revert to test advertisement IDs for development and testing purposes
+[33ma96ef81[m Integrate real AdMob ad units to enable live advertisement serving
+[33m56a453f[m Update build process documentation and scripts to version 7.3
+[33m82e490c[m Update documentation to reflect successful app publication and build validation
+[33m7068593[m Update the app to the newest version across application and documentation
+[33m76ba374[m Make the application compatible with different module systems and environments
+[33mee82cd0[m Ensure icons are correctly displayed by setting the proper file type
+[33m7b0e3c0[m Improve application compatibility and enhance user experience
+[33m82dcbaa[m Enable offline access and improve app installability for better experience
+[33mc7fa1ad[m Improve app functionality as a PWA including file handling and display options
+[33m85cb6f3[m Make app installable on devices and improve user experience
+[33m2599646[m Update app icons to ensure a consistent and modern look
+[33m08e3201[m Enable the app to be installed on devices and function like a native app
+[33m06eb3eb[m Address issues encountered when cleaning up the Gradle cache folder
+[33m7bf6e44[m Address build configuration issues that prevent the application from running
+[33m2bcdbc6[m Address build configuration error in Android project for the mobile app
+[33m35649db[m Add new image to improve the visual appeal of the learning application
+[33m392d297[m Attempt to clear the Gradle cache to resolve build issues on the Android platform
+[33m2cf779a[m Configure the Android build for the app with necessary settings
+[33m153afac[m Add a new image to enhance the visual appeal of the learning experience
+[33mef337ce[m Include image to assist with visual instructions for application installation
+[33m4537d2d[m Address build failures and deprecation warnings for better app stability
+[33mc162001[m Configure the application for building and deployment on Android devices
+[33m3e71ade[m Update permission requests for targeted advertising capabilities
+[33ma20fba8[m Document the decision to switch to a local Capacitor build strategy
+[33m0dfbb92[m Explain how the platform turns a web app into a native Android app
+[33me9b0472[m Automate the process of creating app packages for the Google Play Store
+[33mb213e2a[m Explain options to ensure proper manifest permissions and build process
+[33m822ff97[m Provide a solution for the missing AD_ID permission in AAB files
+[33m83dc197[m Ensure app compliance with Google Play Store policies for advertising
+[33m61d3538[m Allow the app to show personalized ads that are more interesting to users
+[33m35b7b35[m Configure the app to load local files and troubleshoot blank screen issue
+[33m08af5b5[m Apply a new visual theme and layout to improve the user experience
+[33m0f1afe9[m Streamline local builds for enhanced educational app development
+[33mb462fa2[m Provide instructions on how to generate the APK file for the application
+[33mc2d42e5[m Enhance home screen appearance with metallic shimmer effects
+[33m066d70e[m Give the main menu cards a fresh, eye-catching metallic shimmer effect
+[33m40ca7fa[m Restore original, vibrant colors to the main educational content categories
+[33mfc2d13a[m Enhance the visual appeal of the learning modules on the kids' home screen
+[33m56f971c[m Enhance card appearance with improved visual styling and user interface
+[33m3d16bf7[m Improve the look and feel of the main page for younger users
+[33mdb777af[m Update the main menu with new color palettes to enhance appearance
+[33me6315a4[m Revert design changes on the kids home page to the original appearance
+[33mb87096b[m Enhance readability with stylish text outlines and subtle shadows
+[33mb3bc145[m Improve the appearance of titles and subtitles on the home screen
+[33m2d31514[m Improve readability of titles on the home screen with text effects
+[33ma1b9ca2[m Refine navigation system and video playback for better user experience
+[33md30a4e3[m Adjust the home screen mosque icon color to match the settings icon
+[33m5bc075b[m Increase the size and adjust the position of the mosque icon
+[33m522db30[m Make the mosque icon on the main screen slightly larger and more visible
+[33mad5f63b[m Show a mosque icon on the homepage and make handshake icon bigger
+[33m1935956[m Use image for the handshake icon to display it more clearly
+[33m32aeb5c[m Introduce a new icon for the partners section in the navigation bar
+[33m050b98c[m Replace user icon with a handshake image in bottom navigation
+[33md519a54[m Improve cartoon section by showing videos directly and enhancing user experience
+[33m5aaae6f[m Make the cartoon watching experience better and add fullscreen capability
+[33m10f92b0[m Enable full screen viewing and restore original links for cartoons
+[33mf70288a[m Update cartoon content by replacing outdated links with new ones
+[33m68f9aa6[m Restore and update educational videos with functional multilingual links
+[33m0311971[m Update cartoon videos and descriptions across all supported languages
+[33m8c87157[m Enable support for multiple languages for cartoon videos
+[33m5553700[m Add translations for the "Watch" action in multiple languages
+[33mc91bf81[m Address compatibility issues to ensure app builds correctly on newer devices
+[33m34b3d74[m Address issues encountered while packaging the app for distribution
+[33m6e3e8ec[m Address compatibility issues and build errors during the release process
+[33m424e7fd[m Automate the creation of app packages for Android release to the store
+[33m53fe347[m Add signing keys to enable release of app to the Google Play Store
+[33m276aa8b[m Confirm that all necessary project files have been successfully copied
+[33m7184396[m Automate the process of building and packaging the application for Android
+[33me899bc0[m Add scripts and instructions to help developers build the project locally
+[33me47b99b[m Update the application version to reflect the latest changes and fixes
+[33m186a892[m Update the app to meet Google Play's latest requirements
+[33mb3b6ae8[m Remove the Turkish language option from the globe language switcher
+[33meb22cfc[m Remove Turkish language option to simplify the language selection
+[33m016b65c[m Add Turkish translations and centralize cartoon content management
+[33mb3dca1c[m Update cartoon descriptions to properly support Turkish language
+[33m6b099dc[m Add Turkish language support to enhance user experience and content access
+[33m4c54981[m Add an image resource to enhance the application's visual appeal
+[33m76a054a[m Update local build setup guide to use PowerShell instead of Android Studio
+[33m45e2fff[m Provide instructions for building the mobile app locally
+[33mea6eb3c[m Update application's key information following Google Play Console approval
+[33m1025627[m Provide the user with build-related files and keys location information
+[33mc51f7c3[m Add image to project
+[33m2ba7d1d[m Document the application's signing certificate details for future reference
+[33m1f7ea29[m Update the project status to reflect successful Android testing
+[33maa0a8e5[m Mark the application ready for production after user approval
+[33mf909b80[m Update project details reflecting the latest features and user feedback
+[33mbecfe17[m Update audio playback status messages in various supported languages
+[33ma8904c7[m Fix issue where closing the ad leads to the app crashing
+[33m2161580[m Move ad to the main Arabic Alphabet card on the home screen
+[33me061bde[m Add interactive ads that appear when users tap on Arabic letters
+[33md8c936e[m Refine Arabic alphabet section with high-quality audio and user feedback
+[33mc55e1aa[m Improve the pronunciation of letters in the Arabic alphabet learning tool
+[33m829eac3[m Include support for playing audio files within the educational platform
+[33ma290b49[m Implement authentic audio for Arabic letters to improve learning experience
+[33mfa9ad62[m Pronounce Arabic letters clearly when tapped for better learning
+[33maf440be[m Enable sound playback when learning the Arabic alphabet and improve interface
+[33m3c55047[m Change behavior of alphabet letters to highlight selections instead of audio
+[33mcf15822[m Improve pronunciation of Arabic letters, making them clearer for children
+[33m211274c[m Generate unique audio tones for each letter of the Arabic alphabet
+[33mc2b946e[m Improve Arabic alphabet pronunciation with authentic audio sources
+[33m677448c[m Update the title of the Arabic alphabet learning section for Bosnian speakers
+[33m872dec5[m Enable spoken pronunciation of Arabic letters when tapped on screen
+[33mdb07699[m Add Arabic alphabet learning section with multilingual support
+[33m4f74fca[m Improve visual appeal of learning cards with warmer color scheme
+[33m3df7fd2[m Adjust the colors to improve the visual appeal of the main screen
+[33m13f61ee[m Introduce interactive lessons that teach children the Arabic alphabet
+[33m6402be3[m Enhance app monetization with ads and restore quiz functionality
+[33m68bc507[m Allow users to start and stop playing audio directly from the Quran page
+[33m1a132d5[m Update Quran audio recitations to provide a better listening experience
+[33m607c7ce[m Improve audio playback and provide a more reliable listening experience
+[33m19a6947[m Simplify the Quran section with short surahs for children to use easily
+[33md84252d[m Limit available quiz categories to focus solely on Islamic history
+[33m793533d[m Streamline initial app setup by focusing on the history of Islam quizzes
+[33ma47b023[m Improve quiz system reliability and user experience across all languages
+[33medf16d6[m Improve quiz loading reliability and enhance user feedback messages
+[33m3cfbe1e[m Improve rewarded ads to prevent crashes and ensure proper functionality
+[33mf7cb3db[m Improve rewarded ads and fix crash after ads finish playing
+[33m432b5c1[m Improve rewarded ads and fix crash issues for smoother user experience
+[33mc9c7fde[m Let users watch ads after quizzes to gain extra points towards their score
+[33m1e6b6d5[m Restore quiz functionality and ensure proper multilingual translations
+[33mda717f9[m Improve quiz content and ensure translation accuracy across languages
+[33m56c1923[m Improve the quiz loading and starting sequence for a smoother experience
+[33me3b4c54[m Improve quiz experience by fixing crashes and removing disruptive ads
+[33m5b4cfa8[m Ensure ads display correctly in the cartoon section across all languages
+[33m8a06787[m Show ad before opening cartoons regardless of the chosen language
+[33mf657c99[m Show an advertisement before users access cartoons in any language
+[33m4c02ca8[m Implement functional ads to generate revenue for the platform
+[33m835b78d[m Place advertisement banner at the bottom of the screen below navigation
+[33md60cfc9[m Enable display of test ads on real devices using official test IDs
+[33me7a1d83[m Restore the original banner and ensure advertisements are displayed
+[33mbc39164[m Show test advertisements in the app for verifying proper functionality
+[33m9e18e46[m Implement native AdMob banner ad integration with bottom navigation
+[33m6a1e886[m Ensure the banner is visible by placing it above all other elements
+[33m4fe6bb9[m Place advertisement banner at the bottom, matching navigation bar dimensions
+[33m4e34380[m Keep advertisements visible at the bottom of the screen at all times
+[33m5a57453[m Show ads at the bottom and enhance site navigation for easier access
+[33mc3a27e9[m Ensure banner ads and bottom navigation appear correctly on the screen
+[33me6f9339[m Place the banner at the bottom and ensure it doesn't overlap navigation bar
+[33m0057312[m Place advertisement banner correctly above navigation bar on every screen
+[33mdf313d1[m Adjust position of banner ad to ensure visibility across devices
+[33m015fd5a[m Move the banner ad to display correctly at the bottom of the screen
+[33ma649c01[m Adjust the banner ad position to display correctly below the navigation bar
+[33mefd8dd9[m Update location of AdMob banner to improve user interface aesthetics
+[33m74335f3[m Adjust the placement of the advertisement banner and navigation bar
+[33m4d235e2[m Make the navigation bar always visible at the bottom of the screen
+[33m3e08166[m Adjust the size and position of banner ads for optimal viewing
+[33mc777abb[m Keep the bottom navigation bar in place and adjust the ad banner color
+[33m7eb442e[m Adjust the navigation bar to display correctly on the screen
+[33m1bca8f1[m Adjust the position and appearance of banner ads for better user experience
+[33m4130854[m Move the banner ad closer to the bottom of the screen for better visibility
+[33ma6b2c05[m Adjust the size and appearance of ads to improve user interface
+[33md89bbb3[m Refine ad placements and integrate test IDs for safer testing
+[33medd4181[m Integrate advertisements within the application for monetization purposes
+[33mf7cf53c[m Display advertisements to users of the application to generate revenue
+[33m0567e78[m Ensure consistent bottom navigation display across all mobile devices
+[33mdedce38[m Improve the navigation bar to ensure it always stays visible on the screen
+[33ma3484a1[m Update application title and refresh deployment to reflect latest changes
+[33me1c8829[m Ensure users always access the latest version of the learning platform
+[33mf868134[m Update application interface to reflect the latest design changes
+[33m5ffd71b[m Update loading indicator text to reflect the latest version
+[33m247b654[m Improve mobile display and prepare banner ads integration for new APK build
+[33m415d06c[m Adjust the position of the bottom navigation bar for better screen placement
+[33m65baf03[m Adjust the navigation bar position for better viewing on mobile devices
+[33m8e5ab61[m Improve mobile ad integration within the learning application
+[33m59c2ed4[m Set up basic mobile ads and banner to test advertising functionality
+[33me822cbf[m Include image assets for the banner ad in the AdMob monetization setup
+[33me67ed01[m Add image demonstrating where AdMob ID is entered in project settings
+[33m30eb5d6[m Add new visual advertisements to the app to generate revenue
+[33m6bd70c5[m Add new image to the project that may be related to lesson content
+[33m27c1edd[m Add an image asset related to a child-focused learning element
+[33m6d11abd[m Add visual aid to complement educational content within the application
+[33md00af90[m Add visual representation of advertisement placements in the mobile app
+[33m0765859[m Update the chosen platform for mobile app creation and monetization
+[33m1b25af6[m Remove ad banners from web views for a cleaner user experience
+[33m8dee8df[m Enable advertisements and provide a guide for building the Android app
+[33m22592fb[m Display promotional banner within the application to showcase educational resources
+[33mbb269f9[m Update project version number to reflect the newest release of the app
+[33m2f54862[m Deployed your application
+[33mbe3df87[m Enable external integration and remove ads from the main application
+[33m705381a[m Remove all in-app ad configurations to use native ads in container
+[33m63dfbe1[m Explore alternative APK building solution and fix Android build issues
+[33m2ab28fc[m Build the application as an Android app with ads and educational content
+[33mde43fb4[m Enhance app with offline support, web compatibility and AdMob integration
+[33mfbd8f22[m Reduce memory usage to improve app performance and stability
+[33m66c9c55[m Streamline the mobile app building process for wider compatibility
+[33mb06c8a5[m Update project to support newer Android versions and resolve build issues
+[33m78c0994[m Improve the process of creating the installable mobile application
+[33m4537518[m Automate the process of building the application and bypass license issues
+[33m8bf2632[m Improve setup process for Android development environment
+[33md587fb4[m Automate fixing Java path and accepting Android SDK licenses
+[33mca58e11[m Enable advertisements to generate revenue from user engagement
+[33medd20fa[m Fixes build errors by automatically detecting and setting the Java path
+[33m8044778[m Improve the app build process with better error handling and user feedback
+[33m55510be[m Enable building the app with AdMob integration using a simple command
+[33m6511ced[m Automate the process of building the Android application with AdMob integration
+[33m7a7873e[m Add a script that confirms the project is ready for creating a build
+[33mf23113e[m Automate the process of building and packaging the Android application
+[33m56acbc3[m Add scripts to automate the creation of Android application packages
+[33m6f54ad7[m Initialize the project with core structure and essential dependencies
+[33mc880be9[m Update build tools and configurations to improve app compatibility
+[33m77c4109[m Set up initial project structure within the Android Studio environment
+[33m4ef50cb[m Enable users to download the application and support Islamic education
+[33mcd2e88e[m Guide users to run build commands from the project's main directory
+[33mbbd8d90[m Document the successful integration of native AdMob and Capacitor
+[33md060799[m Enable ads and child safety features, improving monetization capabilities
+[33mc0e6c9e[m Enable advertisements in the app to generate revenue on mobile devices
+[33m1075864[m Implement support page and update home screen with donation options
+[33m42e864c[m Inform users that the current ad system does not function correctly
+[33mb2ea354[m Deployed your application
+[33mab556d9[m Show confirmation message when the AdMob account has been approved
+[33m0563c35[m Enable advertisements on the platform now that the AdMob account is active
+[33m23d7318[m Improve ad display and provide troubleshooting instructions for AdMob
+[33m795a3f2[m Enable advertisements to generate revenue and support the platform
+[33m74b2db0[m Display advertisements on the home screen to generate revenue
+[33me44493d[m Deployed your application
+[33m58ebe76[m Integrate real AdMob ad units to enable monetization in the app
+[33m5105580[m Show users live test ads in a prominent way for final confirmation
+[33m35d3b71[m Show ads below navigation and configure AdMob for final production
+[33m96bcd3e[m Relocate the AdMob test panel and banner ad for better visibility
+[33mcf3acf5[m Show the AdMob banner on the home screen and enable test ads
+[33m4ed32e9[m Enable developers to preview and test advertisements within the application
+[33mb1e8b1d[m Add advertisements to generate revenue and reward user engagement
+[33m3e46de6[m Integrate advertisements into the app to support continued development
+[33mc6963ba[m Automate Android APK builds and document successful application creation
+[33m017b746[m Guide users to create mobile app using online services for faster builds
+[33mfbb338e[m Automate the creation of Android app packages using build scripts
+[33m07fa932[m Deployed your application
+[33m18da94d[m Improve the app's installability and fix Android build issues
+[33m2ea663f[m Enhance app installation experience and fix manifest loading errors
+[33mcc9eff2[m Deployed your application
+[33m1ed3652[m Add automated builds for both app store and local device distribution
+[33m02d1511[m Automate creation of Android app builds for distribution and testing
+[33m71acb6b[m Streamline initial project setup and dependency installation process
+[33mc339298[m Provide users with clear instructions on how to download and set up app
+[33m1b59b2c[m Add script to automate setup process after project download
+[33m1238e75[m Automate the process of building and deploying the Android application
+[33m905bc58[m Automate the mobile app build process for easier testing and deployment
+[33md143731[m Enable easy creation of installable Android app files for testing purposes
+[33m719a3fa[m Deployed your application
+[33mb59808e[m Improve mobile app building and deployment process for faster releases
+[33mb92ffab[m Enhance mobile app build process and provide clearer status updates
+[33mbfcc0c3[m Automate Android build process and upgrade build configurations
+[33mf318656[m Automate the process of building final APKs for the mobile application
+[33m4703e1c[m Add script to quickly rebuild and deploy the application for testing
+[33ma7beb86[m Add scripts to simplify creating and deploying the application to mobile devices
+[33m7ca9452[m Update deployment process to support Vercel hosting for secure URLs
+[33m9dd6bd3[m Add script to prepare the app for deployment on Netlify
+[33m717714f[m Streamline the local development server setup and PWA building process
+[33m25b6bbb[m Automate the creation of installable app packages for easier distribution
+[33mbe33147[m Automate PWA setup for easier Android app creation using PWA Builder
+[33me75a9e9[m Automate the process of building an APK file using PowerShell
+[33mbb9d5ad[m Provide clear instructions for building the Android application package
+[33m64ad726[m Replace PowerShell script with batch file for direct APK building
+[33m09f711a[m Enable building of the Android application using automated scripts
+[33m5fca3ef[m Enable building of Android application directly from the command line
+[33m76d147c[m Ensure the application builds successfully on older systems with Java compatibility
+[33m929f6d3[m Configure build settings for improved app stability and compatibility
+[33m66f80aa[m Automate Android build configuration and resolve common build issues
+[33md9771cb[m Add automated fix to resolve Android build issues related to SDK licenses
+[33m346dcdf[m Add script to set up and resolve Android SDK license issues for builds
+[33m1ab74be[m Add the missing element that was expected by the user
+[33m3606ca8[m Fixes Android build issues by accepting licenses and downgrading SDK versions
+[33m5e8146c[m Automate acceptance of Android SDK licenses to resolve build errors
+[33m452dc4f[m Automate the acceptance of necessary licenses for building the Android app
+[33ma7966b9[m Perform maintenance to ensure the codebase remains clean and up-to-date
+[33mbfa9d82[m Update instructions to build the application for Android devices
+[33m44cdbe3[m Automate the Android build process for easier mobile app creation
+[33m3d81206[m Improve the app's performance and enable full-screen video playback
+[33m58419f7[m Set up the project for local Android builds and WebView configuration
+[33m77a0f2d[m Ensure the app builds correctly by targeting an older, compatible Java version
+[33m445fc21[m Automate fix for Android build errors related to SDK and Capacitor
+[33mf3bd04e[m Run tests and prepare application for deployment on Android devices
+[33meccefa2[m Enable app to function offline and build Android packages more effectively
+[33m09ae67a[m Add instructions and script to prepare the app for local APK creation
+[33m53f77a9[m Add automatic detection and configuration of the Android SDK path
+[33mf311541[m Provide instructions to bypass errors and build the Android APK directly
+[33mfd72b5d[m Guide users through resolving white screen issues on Android devices
+[33m3b6b831[m Enable the app to function correctly without an internet connection
+[33mb7061dc[m Improve mobile app functionality and fix preview issues after file upload
+[33me407cc1[m Integrate native functionalities to improve core mobile application features
+[33m070c282[m Adjust web application location and include helpful troubleshooting advice
+[33m7f9a298[m Streamline the configuration process for the Android mobile application
+[33me8c06ae[m Enable the app to navigate to different pages within the platform
+[33mdecffcf[m Load the application directly within the Android environment
+[33mf593a72[m Update the application to include the latest improvements and fixes
+[33m2c4956e[m Update app settings to remove server configuration for deployment
+[33m9f2f963[m Update build configuration to resolve Android build errors
+[33m9ed6567[m Address issues preventing the application from building successfully
+[33m171a3bc[m Update the project to use the latest version of Java for enhanced stability
+[33m837ccc1[m Update the Java path to ensure the Android build process functions correctly
+[33m067c6c8[m Specify the Java version to ensure compatibility during build process
+[33m8b6280b[m Fix issue preventing the app from building due to invalid Java path
+[33m7cbb1bc[m Update Java path so that the application can properly locate the JDK
+[33m65890db[m Adjust application to be compatible with older Java version
+[33m78bec4f[m Ensure app is compatible with older systems and runs smoothly on all devices
+[33m3615c3f[m Ensure the app is built with the correct Java version for compatibility
+[33m04b0261[m Automate fixes and builds to create a functional Android application
+[33m23d217d[m Enable local storage and automate building the Android application
+[33mff85bb0[m Provide instructions for users to access the project and generate the APK
+[33mba32917[m Initialize project structure for Islamic educational mobile platform
+[33m8d393c7[m Provide instructions to build the Android app locally for final APK creation
+[33mf9b7247[m Automate the creation of debug APK builds using PowerShell scripts
+[33mb9aca6d[m Streamline the process for building Android installation packages locally
+[33m7eeae8b[m Improve APK building process with simplified instructions and scripts
+[33me75e7d4[m Create APK build scripts to generate testable application versions
+[33m91eed8b[m Transform app into installable Android application with offline support
+[33md1660ab[m Prepare the application for installation on mobile devices
+[33m149ce7a[m Enable building the application for Android devices for easier testing
+[33mc6dc817[m Take a short break to refresh and prepare for the next coding session
+[33m029d650[m Improve the look and feel of the home screen with fresh colors
+[33m63703b5[m Update the home screen background to a visually appealing gradient
+[33m8b9354c[m Improve the appearance of stories section on the home page
+[33mc5cea9c[m Change the appearance of the stories section on the homepage
+[33m430516d[m Change the color of Islamic Stories card to a vibrant orange tone
+[33mf608140[m Enhance the home screen appearance and navigation for a better user experience
+[33m073332e[m Improve card appearance on the home screen using Tailwind CSS layers
+[33m78cbade[m Enhance the appearance of home screen cards with new color schemes
+[33m0272422[m Restore original colorful appearance of cards throughout the application
+[33m709937b[m Apply consistent and visually appealing color themes to main content areas
+[33mc1b3b02[m Refine the visual theme of main page sections to improve overall aesthetics
+[33mdad062e[m Update the main sections of the home screen to use revised color schemes
+[33md5b507b[m Refine main section colors on the home screen to match the original design
+[33m4ad204d[m Revamp home page cards to improve appearance and add quiz functionality
+[33me74ea90[m Restore original card colors on the homepage as requested by users
+[33m0f06742[m Remove outdated navigation links to streamline the user interface
+[33mcf201d1[m Enhance app with YouTube fullscreen support and build optimizations
+[33m006ad55[m Remove native Android code in favor of web based platform
+[33m7ac440b[m Improve app stability and fix video playback issues for Android users
+[33m48f84e6[m Improve local development by enabling hot module replacement
+[33m82d048c[m Enable access to the application through a specific web address
+[33m03f0387[m Introduce the basic layout and interface for the learning platform
+[33mfa342c2[m Remove remnants of previous app and ensure correct title displays
+[33mf7ba231[m Prepare the application to load the main content managed by React
+[33m55e2f81[m Overhaul user interface and add multi-language support for broader access
+[33m5cb35da[m Prepare the app for installation and improve initial loading experience
+[33m34bcede[m Set up basic server to confirm that our development environment operates properly
+[33m390acb3[m Show message indicating server and preview functionality during startup
+[33m03ccefe[m Improve project startup by integrating Vite as middleware for development
+[33m360b3ef[m Improve application performance and fix routing issues on the server
+[33m8000143[m Verify that the React application is loading and rendering correctly
+[33mfe2f07f[m Create basic user login system and define data structures for the app
+[33mc169d3b[m Update application appearance and configuration for initial preview
+[33mc4ead65[m Add functions to retrieve translated content dynamically
+[33m7eb8874[m Add a dedicated page for donations and contributions to support the platform
+[33mde69a88[m Add navigation bar to the bottom of the screen for easy access to key areas
+[33mc7fb034[m Set up core server and add translations for multiple languages
+[33m452b77a[m Upload all files, configure project, and add detailed build guides
+[33mc6d9556[m Remove various markdown files and outdated APK build scripts
+[33m4c7c18a[m Initialize the mobile app project structure and core dependencies
+[33m9ee1d39[m Update navigation bar appearance for improved visual clarity
+[33mc70cca7[m Update app navigation to improve look and feel of the user interface
+[33mc9b2d8c[m Replace the old navigation bar with a new, improved navigation system
+[33m5b3e53e[m Replace the top navigation bar with a more accessible bottom navigation
+[33m1052e52[m Add navigation bar to the bottom of the screen for easier access
+[33m790f86b[m Change the bottom navigation bar appearance to better match the app theme
+[33m4d5f426[m Improve bottom navigation bar and remove the donation option from menu
+[33m968e402[m Hide donation option from the bottom navigation bar for now
+[33m98d4ffe[m Remove donation page from the application for the time being
+[33mccf8c89[m Remove donation option from navigation and improve quiz text clarity
+[33m2a7676e[m Created a checkpoint
+[33mb384576[m Improve the kid's home screen by removing animations and adding categories
+[33m709e202[m Ensure the application correctly loads on platforms like Replit
+[33me56d900[m Explain how to display the current version of the app on Replit
+[33m22c9e08[m Enhance the kid's home screen with animations, user profiles, and category selection
+[33m00924d6[m Display a test page to confirm server deployments are successful
+[33mff355d5[m Ensure the app always serves the latest changes during development
+[33m026d53a[m Update the app title and remove development-only route on the server
+[33m9a63b82[m Show a special page to confirm the development server is running correctly
+[33m46f68e2[m Update the kid's home screen to indicate that this is a test version
+[33mafbca72[m Remove test endpoint used to verify that the server is running correctly
+[33mf58a7b9[m Add route to verify the server is running correctly during development
+[33m6111ab9[m Implement core application structure with providers and global components
+[33m05f973d[m Add a simple test page to confirm the server is running correctly
+[33me217f10[m Display a simple test interface for initial application confirmation
+[33m8848e28[m Remove temporary test HTML file and its associated styling
+[33m165a298[m Created a checkpoint
+[33mde25ea9[m Replace placeholder logo with the official logo on the home screen
+[33me81a570[m Ensure the development environment correctly serves the React application
+[33m4beb468[m Improve language selection and persistence for a more consistent experience
+[33m89b5206[m Add preview page to test and view the application in a browser window
+[33mc28439b[m Prepare development environment for live application preview
+[33m7122fd4[m Enable the application to display menu options in different languages
+[33mb148e03[m Enable users to change the app language and save it for future use
+[33m5a07bf3[m Deployed your application
+[33m5cd1745[m Introduce fun quizzes and stories on the kids' home screen
+[33mae1e76f[m Refine children's home page with updated content and improved aesthetics
+[33m772178a[m Restore original kids' home page and add Python 3 support
+[33m02e489e[m Restored to '17d06f604e16463b40b7e0e6b306ea2c36fbb945'
+[33m9929bdb[m Saved your changes before rolling back
+[33m17d06f6[m Initialize core structure for the Islamic educational mobile platform
+[33me3dd684[m Update application entry point to ensure proper component rendering
+[33m3bd0776[m Deployed your application
+[33m1c4f1c9[m Remove old files and initial setup files that are no longer needed
+[33ma0ccfc2[m Fix a critical error preventing the app from starting correctly
+[33ma6ed0ca[m Enhance app stability and functionality for Google Play Store approval
+[33m5075041[m Restore previous project state from backup following unexpected changes
+[33m43f5223[m Add access to a stable version of the Islamic educational platform
+[33mbae984b[m Incorporate all project resources to ensure seamless learning experiences
+[33m8ff7c1c[m Introduce interactive learning sections to the educational platform
+[33mc4bd652[m Add a direct link to the original application layout for comparison
+[33mc2867b9[m Revamp app structure with new pages and enhanced navigation elements
+[33m3c27ab4[m Serve application files reliably using absolute paths on the server
+[33mac8ba3b[m Test and display the app in Replit and integrate basic ILMBUDS HTML page
+[33mf27d896[m Address React context issue and update dependencies for better stability
+[33m891fbdc[m Solve React runtime errors and show the main app layout in web view
+[33m620a9e4[m Add test route to bypass React errors and verify server functionality
+[33mb16a5eb[m Improve application startup reliability and fix display issues
+[33maf3f633[m Initialize core project structure for educational mobile platform
+[33md337fb6[m Improve app startup and handle potential errors gracefully
+[33m2f9d30e[m Restore app's original interface and fix user experience issues
+[33mcf59781[m Set up core structure and initial configuration for the mobile application
+[33m5c46e62[m Revert to original application setup for improved stability and reliability
+[33m8ced03c[m Create a basic version of the app for initial testing purposes
+[33mcda7309[m Attempt to fix app installation issues based on user feedback
+[33m594e004[m Create a minimal, installable app for testing core functionality
+[33mddb26bc[m Prepare application for release by finalizing build configurations
+[33m875cba3[m Create a functional Android application package for testing purposes
+[33mb3dd19d[m Address issue preventing the application from being correctly installed
+[33m7b392ea[m Enable the building of Android application packages for distribution
+[33mc5ec62e[m Enable display of advertisements within the mobile application
+[33m9d579d6[m Improve the server's functionality and management of static assets
+[33m96c0796[m Deployed your application
+[33m31c3984[m Update the web view to display the new Islamic quiz application design
+[33m3df4cec[m Show the main application page when users visit the website
+[33ma9d8c8c[m Ensure proper file handling by telling the server how to interpret modules
+[33m2f5f04b[m Enhance educational content and platform functionality for young users
+[33m27beef3[m Showcase the Islamic learning app with a visually appealing landing page
+[33m3de4a7a[m Serve the HTML app directly and provide static assets like images/sounds
+[33m1752310[m Improve the development experience by streamlining static file serving
+[33mda31a29[m Set up server to deliver application files and other static content
+[33m05a1009[m Improve the reliability of the educational app and address recent issues
+[33m2779e36[m Serve the main application directly, ensuring it always works correctly
+[33m9bfce46[m Direct users to the active application interface upon opening the website
+[33mfd0545c[m Ensure the website functions correctly by always running in production mode
+[33m97817db[m Revert application to a previous stable version for improved reliability
+[33m8f2e968[m Improve the way the website loads for a faster, more reliable experience
+[33m92e9daa[m Showcase a streamlined version of the app with interactive learning modules
+[33me2669b2[m Create a website landing page showcasing the educational mobile application
+[33mf866f47[m Enhance the app with improved performance and new features
+[33m0b9dec6[m Fix error preventing users from accessing the educational content
+[33mefdda37[m Show a basic landing page while resolving problems with the React Native app
+[33m91bdad8[m Display application content directly within the main index file
+[33m3da24a0[m Restructure the app layout and add a visually appealing home screen
+[33mbc87cb6[m Update the main page with a simplified layout and branding elements
+[33m78d95fe[m Fix an error preventing the app from running correctly on the web view
+[33m71a278c[m Remove code that reloads the page during development
+[33m6a076ad[m Improve development experience by disabling React Fast Refresh
+[33mfd40de2[m Automate the process of creating installable application packages
+[33m9427f1f[m Restore original app layout and fix card functionality issues
+[33me8b1f9a[m Serve a new educational application within the main platform
+[33mb0ccbc1[m Enhance platform with PWA support, new logo, and improved UI elements
+[33m39ed1b3[m Revamp core app structure and enhance UI/UX for improved experience
+[33m17672db[m Prepare the app for Android deployment and improve the user experience
+[33m5bbb594[m Set up base project structure and improve initial application loading
+[33m02e6c8a[m Set up basic website structure and enable offline access for faster loading
+[33mff50d7f[m Initialize project with core Android and Cordova files
+[33m2e263eb[m Transform the website into an installable application on mobile devices
+[33m72306a6[m Ensure the app functions correctly by serving necessary static files
+[33mcda9377[m Deployed your application
+[33m790c242[m Transform app into a fully installable application with offline capabilities
+[33m9324484[m Create initial version of educational application for Android devices
+[33m6dc7783[m Update the app to address package parsing errors on newer devices
+[33m1b8689d[m Enable creation of a basic, installable version of the application
+[33m2b33cbe[m Rebuild the mobile application to address installation errors
+[33m33faacc[m Prepare application for distribution and resolve installation issues
+[33med870ee[m Automate the process of generating installable Android application package
+[33m103d336[m Initialize the core structure of the educational mobile application
+[33ma53dee2[m Package the educational app for distribution on Android devices
+[33mdb5c297[m Update the app to the latest tools and improve overall performance
+[33m1b02141[m Enable Serbian language support throughout the mobile learning platform
+[33m152ed73[m Set up the foundation for the Android version of the learning app
+[33m081677a[m Integrate media assets, logos, and initial UI for engaging user experience
+[33mc3c0c0f[m Add core Android application to display the learning platform's content
+[33mcaf4312[m Improve build speed and reliability with updated Gradle version
+[33m788c86e[m Update the Android build process to use an older, more stable version
+[33mdc5d0d7[m Enable support for building and deploying the app on mobile devices
+[33mccc4428[m Improve build performance and resolve potential timeout issues for Android
+[33m56c3378[m Update Gradle version used to build the Android application
+[33m476aad5[m Update default settings to improve compatibility with the latest Java version
+[33m254c581[m Add script to make the application build process consistent
+[33m4799e29[m Enable direct APK builds using the Android SDK to streamline the build process
+[33mec4861e[m Update the build process to use Java 21 for improved performance
+[33mc12bd51[m Update the project to use a specific Java version and remove JVM arguments
+[33m8b2e523[m Update project to use the latest version of Java for improved performance
+[33m494b786[m Update the project's Android build settings and Gradle version
+[33m6649097[m Change the project to use an older version of the Gradle build system
+[33m24199ac[m Improve the application build process and enhance compatibility
+[33me4367e6[m Update the version of the Gradle build tool used by the Android application
+[33mbeac8c1[m Update the building process to utilize a newer version of the platform
+[33mec7a248[m Update build settings to ensure compatibility with older Java versions
+[33m2bd423d[m Update the Java version to ensure compatibility with the build process
+[33me0cebff[m Adjust Java version compatibility to ensure wider device support
+[33m4d04050[m Increase memory allocation to improve build process for application
+[33ma668b4c[m Created a checkpoint
+[33m48b0429[m Enable the creation of installable Android app package for testing
+[33m1fcf7c5[m Prepare the application for distribution without requiring an internet connection
+[33mbd7b6c7[m Create offline version of the app for use without a network connection
+[33m7d94c0a[m Enable offline mode, providing educational content without internet access
+[33ma456f6b[m Create build script to compile application for offline distribution
+[33m083f508[m Improve app loading speed by saving categories on the device
+[33m9bfe03d[m Enable users to log in and register even when they are offline
+[33mf5f2421[m Add Windows script to generate Gradle wrapper files for easier builds
+[33mc810778[m Update the project to use an older version of the Gradle build tool
+[33m4b24e24[m Fix a problem that stops the Android app from building correctly
+[33m1d5b3d7[m Upgrade the application's build system to the latest stable version
+[33m3877914[m Automate Gradle installation process, making setup easier for developers
+[33mc3f15f9[m Resolve issues preventing the application from building correctly
+[33m734912e[m Update the core Gradle system to improve overall project build process
+[33mb9f107b[m Adds a testing script to confirm the correct setup of the development environment
+[33ma443ab5[m Improve Android build process with updated scripts and solutions
+[33mae3a741[m Address issue preventing the app from being built using the SDK
+[33m9d905f5[m Automate Android SDK detection and simplify the app build process
+[33ma14fddd[m Guide users with clear instructions on how to properly set up the Android SDK
+[33mf549d8e[m Add scripts to guide users through Android SDK setup and installation
+[33m671ebb4[m Provide users with instructions for building the app without Android SDK
+[33m559d5b0[m Add scripts to help build the application on Android using Java 8
+[33m1a88c09[m Enable easier building of the Android application for distribution
+[33m3d4d36f[m Add scripts to build the application using a specific Java version
+[33m39d3c85[m Configure the app to build with an older, compatible version of Java
+[33mb96fd26[m Add script to allow the application to be built on Windows platform
+[33mff6dbe0[m Automate the application build process for the Android platform
+[33m3923e7a[m Automate the APK creation process using command-line tools
+[33mcd2a64c[m Provide build instructions and scripts to easily create the application
+[33mccadd18[m Update app to meet Google Play Store policies and improve security
+[33m0a657bb[m Add script to automate the APK building process outside Android Studio
+[33m71d2496[m Update build process and dependencies to create APK more reliably
+[33m5e5f11b[m Update instructions for building and deploying the application
+[33me0080fc[m Configure the Android build process to ensure compatibility and stability
+[33m27af187[m Set up the Android project to create a new version of the app
+[33m9965695[m Fix the app build by enforcing compatibility with an older Java version
+[33md4e43bc[m Adjust the Android build configuration to ensure compatibility
+[33m096f20c[m Revert to older settings to build a working version of the application
+[33m49e89e2[m Add script to resolve Gradle build issues by downgrading Gradle and Java
+[33m98bde7f[m Revert to the previous Android project setup with updated files
+[33m142183b[m Address a build error by correctly configuring the Android SDK path
+[33mef0acd1[m Update the app and integrate advertising for enhanced functionality
+[33m380dffd[m Automate the creation of a fresh Android project for the mobile platform
+[33me475ca7[m Automate Android project setup with custom configurations and stable versions
+[33md4c3f63[m Update Java compatibility to support the latest features and improvements
+[33mb575e74[m Ensure the app builds correctly by enforcing the use of Java 8
+[33me174dc9[m Address build errors by using a compatible version of Java
+[33mbdfe3cb[m Adjust the application's Java version to ensure compatibility on more devices
+[33m4a1dd47[m Ensure the app builds correctly by enforcing the correct Java version
+[33mafee02c[m Add script to clean the project and rebuild from scratch
+[33me7ffda9[m Update the build system to improve compatibility and resolve build errors
+[33m33c22d1[m Update Java version to ensure smooth building and running of the application
+[33m6cf7c02[m Update the project to use Java 17 for compatibility and improvements
+[33mc14fa3c[m Adjust the Java version to ensure the application builds successfully
+[33m9346f93[m Improve build process and ensure compatibility for Android compilation
+[33me9381e7[m Adjust Java version to ensure the application builds successfully
+[33m87c2fe9[m Make the application compatible with older devices and systems
+[33m353a210[m Resolve build issues by downgrading Gradle version for compatibility
+[33m2841f51[m Automate the process of building the application with a specific Java version
+[33mfcd7f26[m Ensure the application is compatible with older systems and dependencies
+[33mb1de3e2[m Improve the app's reliability by loading all content locally
+[33mceb7242[m Update project to use Java 17 for compilation and ensure compatibility
+[33ma58922e[m Improve application security by enforcing secure network connections
+[33mc2774eb[m Ensure the application builds correctly by setting the correct Java version
+[33m29f63ee[m Update the project's build tools to resolve the build failure
+[33m6e0aef6[m Fixes the issue preventing the app from running after installation
+[33ma42a4cc[m Provide instructions for creating and testing the debug version of the app
+[33m77bd0dd[m Prepare the application for release with critical updates and fixes
+[33m395f914[m Improve child safety and address Google Play review issues
+[33m6376ff1[m Improve app stability and address Google Play Store issues for release
+[33m379bcf8[m Improve app stability and security with enhanced error handling and safeguards
+[33m9eac0c2[m Improve app stability and resolve issues reported by Google Play Console
+[33m9957afa[m Enhance the security of network connections for improved user safety
+[33m4d425e2[m Improve app stability and error handling to meet Google Play requirements
+[33m0010abf[m Update app to meet Google Play requirements and improve stability
+[33mefa2b5e[m Ensure the app build process consistently uses Java 17 compilation settings
+[33m5fb2cc9[m Ensure the Android app builds correctly by enforcing Java version 17
+[33m0e446b2[m Adjust the build system configuration to be compatible with the current environment
+[33m22bed8a[m Ensure the app builds correctly by specifying correct Java version
+[33me210b6f[m Fix build issues by downgrading Gradle version and Android Gradle Plugin
+[33mbeec105[m Specify the Java version to ensure compatibility with the build process
+[33m821653e[m Ensure the application is compatible with a specific Java version
+[33ma2d5adc[m Update the app to use newer tools for faster performance and security
+[33m17fd2b7[m Initialize project structure and configure essential dependencies
+[33m5571418[m Update the application to the newest version with several improvements
+[33ma65bc04[m Prevent navigation to external websites from within the application
+[33m4279593[m Update app to comply with child safety policies and meet store guidelines
+[33m572c109[m Update the app version to address a version code conflict during deployment
+[33mf3e44be[m Update the app's version number for the next release on the app stores
+[33m4afca31[m Remove prayer times feature from the main application and update versions
+[33m7026d3e[m Enhance child safety and performance of the learning app experience
+[33m4056cab[m Deployed your application
+[33maed01fd[m Deployed your application
+[33mb63725a[m Update app with internal content, AdMob improvements and prayer support
+[33m7f41a17[m Add support for image processing to improve the learning experience
+[33m15a7793[m Update the application to the newest version available on all platforms
+[33mb0e78f2[m Improve mobile app deployment process for production builds
+[33mad2e1d5[m Prepare app for release by signing the application bundle securely
+[33m7259344[m Remove redundant prayer time shortcut from the bottom navigation bar
+[33mda9adb7[m Add a new prayer times feature so children can learn prayer schedules
+[33mdbaf16d[m Update the app with location access and improved advertising features
+[33mfb1cc9c[m Integrate secure payment processing functionality into the mobile app
+[33maf77a17[m Update the application version to reflect the newest changes and features
+[33mf3632f9[m Improve location refresh button with new icon and visual enhancements
+[33m850e00a[m Show user's current location with a more representative icon and styling
+[33mbba634c[m Show the user's current location name in prayer times page dynamically
+[33mf01e31b[m Set a fixed location for prayer times based on the selected language
+[33mac644c2[m Show user's city and translated country name for prayer times location
+[33m9018fff[m Show location consistently across languages while fetching prayer times
+[33m232dcc1[m Display user's actual location with accurate translated country names
+[33m62bce11[m Show prayer times for a specific city using the selected language
+[33mfdbcb22[m Improve the display of dates and country names based on the language
+[33m8e52892[m Improve location and date display based on selected language
+[33mebcc795[m Update the Bosnian translation for the dawn prayer name on prayer times
+[33m75008bb[m Increase icon sizes for better visibility across the mobile platform
+[33m1f42f1c[m Add prayer times icon to navigation bar and prayer times page
+[33medb18d3[m Update prayer times to use a new dedicated page with enhanced features
+[33m06da9ed[m Show prayer times based on user location in the app navigation
+[33mef4b2d1[m Make ads work properly and offer rewards after users watch them
+[33ma11550c[m Enable full-screen advertisements to properly display within the mobile app
+[33m18accf7[m Display a generic placeholder instead of a specific banner ad ID
+[33mc3ea60d[m Display real advertisements to users within the mobile application
+[33md7ad795[m Show real advertisements at the bottom of the app to generate revenue
+[33me0f2fbc[m Create visual banner highlighting the educational app for young children
+[33m9be3172[m Include a new app icon reflecting the platform's educational focus
+[33mb621ca8[m Generate QR code to make accessing the app easier for families
+[33me06c672[m Update the app version to bring users the latest features and improvements
+[33md4c0950[m Update application version for new release on the Google Play Store
+[33ma2ea458[m Update the application version number for new releases to the app store
+[33m544d310[m Update the application to a newer version for distribution purposes
+[33m653acc3[m Update the application version for the upcoming Google Play Store release
+[33m80a1479[m Verify AdMob banner ad loads and displays correctly on the main screen
+[33mb008c68[m Show banner ads to users at the top of the app screen
+[33m3551a94[m Enable advertisement banners to generate revenue within the app
+[33md931611[m Restored to '799f328335f150a2f1a33a280b45ea8e10b0edcf'
+[33ma90d53d[m Checkpoint before revert
+[33m799f328[m Update the application to the newest version on the Google Play Store
+[33mbd454d9[m Configure ads to ensure they comply with child safety guidelines
+[33m9814c9c[m Trigger a new build to ensure recent changes are correctly deployed
+[33me234496[m Configure Android build for release and add AdMob.
+[33m5bb39b5[m Update app version to 1.0
+[33mb540c4c[m Update Android app version code to 2
+[33m023c763[m Fix YouTube fullscreen issues on Android by implementing a native YouTube Player API.
+[33m6882107[m Fix YouTube fullscreen functionality on Android APK builds by implementing a custom WebChromeClient.
+[33m2e69a56[m Fix YouTube video fullscreen functionality on Android.
+[33mb8c24b2[m Fix contact form submission issue
+[33me2e96ff[m Improve contact form feedback by adding email delivery status reporting.  The form now indicates whether the email was successfully sent and provides appropriate user messages.
+[33mccc7acf[m Add email functionality to contact form.  Improved internationalization of validation messages and implemented SendGrid for email sending.
+[33m337b816[m Enhance video playback: Improve fullscreen video support and add YouTube parameters for better integration.
+[33m93259d8[m Add imprint/legal information section to the About page
+[33m7840d2f[m Add AI-powered features to enhance the learning experience.
+[33m48ca540[m Add privacy policy in all languages.
+[33m983a173[m Update partner logos and contact information display.
+[33m57413a4[m Update partner logos on the partners page
+[33m0457cfb[m Add partner information to the platform.  Includes images and multilingual support.
+[33m7271c86[m Fix Android app connection to server by updating server URL and enabling cleartext traffic.
+[33me7190e8[m Update team member images in About page
+[33mad72706[m Update team member images in About page using base64 encoding.
+[33me96e031[m Fix: Correct title for Islamic content expert in About page
+[33mdddfef4[m Update About page with team member details and version number
+[33m86f619c[m Add images to the project assets
+[33m3bffb72[m Adjust the vertical position of the language switcher
+[33m4a0fe2f[m Adjust language switcher position in header
+[33md984c64[m Update language switcher with improved design and functionality
+[33mdbe4ef3[m Adjust language switcher position
+[33mb3f0880[m Adjust language switcher vertical position
+[33mb8b5aa8[m Improve Android app status bar handling by updating layout and styling for better integration.
+[33mf79c7c2[m Fix display issues on Android devices by adjusting app layout for status bar
+[33m92a48f9[m Fix display issues on mobile devices by adjusting status bar handling and padding.
+[33m39453fd[m Update app name and add new logo
+[33m5129705[m Fix Android build error by correcting plugin registration in MainActivity.
+[33m30194f8[m Fix Android app installation and white screen issues by optimizing WebView settings, implementing COPPA compliance for AdMob, and updating ProGuard rules.
+[33mb814018[m Update Android app with AdMob integration and app optimization.
+[33m52c56fb[m Improve Android app stability and functionality by enhancing WebView configuration and adding COPPA compliance.
+[33mca823ae[m Add debugging assets related to application crashes.
+[33m0525f73[m Add Android app assets
+[33m280b06b[m Enhance Android app store presence by adding app description, keywords, deep links, and updated marketing materials.
+[33m868109c[m Prepare application for Google Play Store release by adding instructions for APK generation and Google Play Store registration.
+[33m299d50d[m Prepare Android app for release by optimizing build process and adding Google Play Store instructions
+[33m15f3f1d[m Add guidelines for configuring AdMob to filter inappropriate ads in the Islamic education app for children.
+[33m0463f92[m Add Android mobile app build capability using Capacitor.
+[33m02466ed[m Add dark mode toggle to settings and app.
+[33mc25c1b4[m Update cartoon page background color
+[33me2d05d1[m Update Cartoon page background color and player color
+[33m1a22833[m Update cartoon page colors
+[33m4be1097[m Adjust firework animation duration to match audio length.  The animation now dynamically adjusts its duration based on the length of the audio file played upon correct answers.
+[33mdd8c52e[m Increase firework animation duration to 8 seconds
+[33ma119e1d[m Increase firework animation duration to 5 seconds
+[33m76dd67d[m Replace candy animation with firework animation on correct answer.
+[33m536d758[m Improve candy confetti animation:  Adjusted animation duration, added more candies, and enhanced visual effects.
+[33m38b0046[m Add confetti animation to celebrate correct quiz answers.
+[33m5bef8f5[m Checkpoint
+[33mf9b3c94[m Improve quiz interface styling and functionality.  Fixed a bug preventing quiz navigation and enhanced visual feedback.
+[33md253cc3[m Improve plus icon display
+[33md369c56[m Checkpoint
+[33m6617cfb[m Update quiz component styling
+[33mc8a375e[m Fix display issues and implement correct answer highlighting in the History of Islam quiz.
+[33mfb5817b[m Remove unnecessary plus circle and improve quiz navigation
+[33me22ad59[m Remove animated balloons from kids' home page
+[33m937dfc3[m Update child addition button icon
+[33m95403d4[m Update catechism page icons with images.
+[33mbe14722[m Increase size of navbar icons
+[33m1c0a050[m Update partner section icon in navigation bar
+[33m1a6134b[m Update handshake icon in UI.
+[33mdca2ea3[m Update partner icon in navigation to use handshake icon across all languages.
+[33m9a37747[m Update Arabic blessing display in kids' home page
+[33m1940601[m Checkpoint
+[33m8005fde[m Improve Arabic greeting display
+[33m3ca86cd[m Add Arabic language support and a Basmalah to the application.
+[33m9c2a85c[m Update home page kids section styling
+[33m77a9916[m Update olive green color
+[33mba91e53[m Update homepage text color to olive green for all languages
+[33m2e8253d[m Update logo image
+[33m97c9eaa[m Update logo to SVG format
+[33md1c8007[m Update website logo
+[33m3437de6[m Update application logo and optimize images
+[33m0399ec9[m Update logo image used on About and Home pages
+[33mb68968b[m Update ILMBUDS logo across the application
+[33m6fbfd85[m Update logo image URLs to prevent caching
+[33m7558ad0[m Checkpoint
+[33macd044d[m Update website logo across all languages
+[33m1419cdd[m Update quiz completion screen icon
+[33m2b8d261[m Fix: Remove extra "+" symbols from quizzes
+[33m587aaae[m Improve quiz interface: Replace plus icons with back buttons and radio buttons.
+[33me321137[m Add multilingual support for quiz completion messages and rewarded ads.
+[33ma8b1aae[m Fix: Improve quiz completion process.  Addresses issues with quiz not finishing and adds logging for debugging.
+[33mb6f9aab[m Fix: Always allow users to earn extra points in quizzes
+[33m3085a38[m Always show rewarded video ads after quiz completion.
+[33m05ec2aa[m Restore previously removed advertisements
+[33m9ee3f84[m Add images for the Islamic educational platform
+[33m1d1f7a8[m Update home page icons with new images
+[33me996844[m Update home page icons
+[33mc2e4eda[m Remove extraneous plus icons (+) from the application
+[33m454a4a9[m Remove extra plus icons from home page buttons
+[33m055fc67[m Fix Albanian language code in language switcher
+[33m3e8e2fe[m Checkpoint
+[33m95ff21d[m Improve language switcher UI: Replaced large buttons with a more compact dropdown menu.
+[33mae45ff8[m Fix language selection and remove ads
+[33m15e6616[m Fix: Resolved display issues caused by ads. Removed ads to restore functionality.
+[33m7cb3343[m Update language switcher to use flag images for language selection.
+[33m128090d[m Fix display of language flags in quiz
+[33m96a98d0[m Improve quiz completion screen visuals by adding confetti animation and score display.
+[33mc0b6978[m Remove rewarded ad from quiz completion screen
+[33m1685088[m Update language switcher UI and quiz image paths.
+[33mca57176[m Improve quiz functionality and UI: Updated language switcher with flag images, added robust error handling and logging to the quiz component, and improved image handling in the quiz data.
+[33m0fe026b[m Fix language selection issues by simplifying the language switcher design.
+[33m6e47b37[m Fix language selection display issue by directly importing flag images.
+[33mbd58a4d[m Fix language selection issue in the History of Islam module by improving flag image loading and implementation.
+[33mc27b336[m Fix quiz functionality and language switcher display
+[33mf556a55[m Fix persistent ads and quiz display issues
+[33m55d551a[m Fix ad display issue on page navigation.  Improved image loading and fallback handling.
+[33mcde9fb0[m Add new icons for quiz, book, mosque, and video modules
+[33mf2a98db[m Checkpoint
+[33m2f654d1[m Remove unwanted banner ads from application footer
+[33m2c652c4[m Add screenshot to project assets
+[33m1e4ebe2[m Checkpoint
+[33m3bd5d83[m Checkpoint
+[33mffc9daa[m Add in-app advertising to enhance monetization.  Includes banner, rewarded, and interstitial ads.
+[33m303eba6[m Update cartoon titles to match video titles
+[33m8a42dda[m Add German cartoon content to the platform
+[33m7001bfd[m Add Albanian cartoons to the cartoons page
+[33m7f82601[m Add Bosnian cartoons to the platform
+[33m3544fd1[m Add Italian cartoons to the platform
+[33mc0c46eb[m Add Italian translation for Catechism section.
+[33mbf3455e[m Fix navigation and page titles in Catechism section
+[33m499d8ad[m Add Italian language support to ablution and catechism sections
+[33m56b353a[m Add Italian language support to story pages
+[33m75cb883[m Add Italian translations to story pages
+[33meb1fce8[m Checkpoint
+[33m3853067[m Update cartoons page with smaller YouTube players and new videos
+[33md89c831[m Update cartoon video player to use YouTube iframe
+[33m4a6a806[m Remove cartoons section from navigation and update cartoons page.
+[33m607722f[m Add play button to cartoon thumbnails
+[33m9e3a825[m Update cartoon thumbnails to use YouTube thumbnails
+[33mdcb91b1[m Fix broken cartoon thumbnails by updating image paths
+[33m23738a0[m Update cartoon thumbnail URLs to use the correct asset path
+[33mec9f11c[m Add YouTube video player to cartoons page.
+[33mc998a46[m Add cartoon videos to kids' home page
+[33ma51be1c[m Update cartoons page with multilingual support
+[33m1a1fe0c[m Add cartoons section to the Islamic educational platform
+[33m0d70d92[m Add two new quiz questions about important prophets in Islam.
+[33m591e3b2[m Add Italian, Bosnian, and German translations to the quiz content.
+[33m2bc725f[m Add German language support to ablution and catechism pages
+[33mfcae3e4[m Add Italian and German language support to Islamic beliefs section.
+[33m03cc71b[m Add Italian and German language support to the Five Pillars of Islam section.
+[33m4c1640d[m Add Italian language support to Catechism section
+[33m70b40fb[m Update German translations for "Catechism" to "Katechismus-Ilmihal"
+[33m80aae1f[m Add Italian and German language support to the Quran learning section.
+[33me230049[m Add Italian and German language support to the About page.
+[33m35df09c[m Add German translations for three Islamic stories and update the website title to German.
+[33mcf9a098[m Add German translations to stories page
+[33md339bda[m Translate Islamic Stories section
+[33m7cb5e26[m Add German translations to story pages
+[33ma7fa474[m Add Italian, German, and Bosnian translations to the quiz content.
+[33m8ffe62f[m Add Italian language support
+[33mcb9462f[m Add Italian language support
+[33m811c788[m Add Italian language support to the app settings
+[33mb40e008[m Fix: Updated About page logo
+[33m28de0fa[m Update logo display on About page for all languages.
+[33m2c00599[m Fix: Improved logo centering and added multilingual support to the About page.
+[33m536c9b7[m Add Bosnian language support to the "About Us" page.
+[33mb5ed3b6[m Update ablution guide with Bosnian translation and improved title
+[33m8fd3a6e[m Add Bosnian language support to Islamic beliefs section.
+[33m3a2d88e[m Add Bosnian language support to catechism section.
+[33m607adbc[m Fix typos in home page card titles
+[33m95c1298[m Add Bosnian language support to Quran learning section.
+[33m904e6a0[m Add Bosnian translations for several children's Islamic stories
+[33mcbc32ad[m Add Bosnian translations for children's Islamic stories
+[33me08c058[m Add Bosnian translation for "Prophet Ibrahim and the Idols" story.
+[33mc6547d5[m Add Bosnian language support to the Islamic educational platform.
+[33m09c0667[m Add Bosnian language support.  Updated UI elements to display Bosnian translations for various sections.
+[33md32d729[m Update Bosnian translations for home page and navigation.
+[33m994f57d[m Fix translation issues in the Islamic education platform.
+[33mb893181[m Checkpoint
+[33ma370764[m Update Bosnian translations on the homepage and learning modules.
+[33m38b2a61[m Add Ilmihal catechism content
+[33mdf1066f[m Rename "Catechism" section to "Ilmihal" and update related navigation and text
+[33m12684ea[m Add Albanian language support for home page buttons
+[33m0a18598[m Add Albanian language support to Islamic beliefs section
+[33maf1da4b[m Update Albanian and other language translations for various sections.
+[33m41ec57c[m Translate Islamic education platform content into Albanian.
+[33mf3da638[m Add donation information page with multilingual support
+[33m86e5484[m Update navigation and add multilingual contact form.
+[33m9a10cfa[m Add Partners section to the navigation and application
+[33m09f7ce1[m Update Ablution and Catechism page icons and titles
+[33mf9a6799[m Fix: Improve audio playback reliability by simplifying the sound file loading process and adding backup audio files.
+[33md485a3d[m Fix audio playback issues and quiz question limits. Improved audio loading reliability by trying multiple file paths and limited quiz questions to seven.
+[33mf7252b5[m Add audio feedback for quiz responses and improve sound file loading.
+[33m3aef329[m Update UI text and add Bosnian translations for improved multilingual support.  Includes Navbar, Language Switcher, and HomeKids page updates.
+[33m9948f47[m Add quiz category selection page and refactor audio service.
+[33mdad1d3d[m Fix: Simplify quiz navigation and correct audio file paths.  Removed unnecessary category selection logic and updated audio file paths.
+[33mf38b44e[m Fix: Implement audio playback for quiz sounds and improve audio error handling.
+[33m1221186[m Fix: Implement category selection before quiz start and handle missing category scenarios; Improve audio playback reliability.
+[33m3988bc2[m Refactor audio playback: Replace sound library with dedicated audio service for improved functionality and UX. Add support for multiple Islamic sounds.
+[33ma977e76[m Update sound effects and add Bismillah audio playback on navigation.
+[33md926c85[m Add audio feedback (Bismillah, Allahu Akbar, Subhanallah) to the kids' home page and implement audio service.
+[33m16ce0e2[m Checkpoint
+[33m9602c68[m Add animated balloons, clouds, and stars to the kids' home page for enhanced visual appeal.
+[33m2c853eb[m Enhance home page with kid-friendly design and interactive elements to improve engagement.
+[33m1701afb[m Translate Catechism and Five Pillars sections into Albanian.
+[33m792dd1e[m Add support for English, German, and Italian languages.
+[33m3c9ed68[m Add pages for Islamic Pillars, Beliefs, and Ablution, enhancing the educational content.
+[33m8a48467[m Improve flag icon styling in language switcher.
+[33m5a363b1[m Update language flag icons and change language selection icon to improve visual consistency and appearance.
+[33mf7e069e[m Update language switcher with Albanian and Bosnian flags and revert home icon to default.
+[33mb29eeaa[m Replace SVG flags with PNG images in language switcher and update story image display.
+[33m7efa3fd[m Add Albanian translations for Catechism section content.
+[33mef380b9[m Begin Albanian language translation for educational content.
+[33ma7c23d5[m Update UI with new logo and replace placeholder quiz images with custom assets.
+[33ma9af5ec[m Fix: Implement category selection before starting quiz to resolve quiz loading issues.
+[33m073334c[m Fix: Relocate Qibla compass in navbar and resolve quiz accessibility issues.
+[33mefd81e3[m Fix: Use default sound effect in QuizContainer instead of custom audio URL.
+[33mc6d5446[m Enhance quiz experience and remove Qibla Compass; add celebratory candy animation and Islamic sound effects.
+[33m12186da[m Update story images with higher-quality JPGs.
+[33mccc7cc5[m Update Ablution Guide section in Catechism: Replace previous multi-image/step format with single image and textual description of the 9 steps of Wudu (Islamic ablution), as per user request.
+[33m8b517a5[m Revert to previous home page design.
+[33mb56ee46[m Enhance home page design and add hover sound effect.  Improved home page visuals with mosque silhouettes and updated background styling.
+[33ma485205[m Refactor Quran section: Remove videos tab, redesign Discover and Learn tabs with modern styling and improved player.
+[33m17a2cef[m Fix: Adjust image display in Belief and Pillar detail pages to show full images.
+[33m3cbc88d[m Fix: Correct navigation within Catechism section; use window.location.href for reliable routing.
+[33ma11125c[m Update navigation buttons to correctly return to "Islamic Beliefs" and "Five Pillars" sections.
+[33mc64f55e[m Implement detailed views for Pillars of Islam and Islamic Beliefs.  Each section now opens in a new page displaying detailed content.
+[33m115865f[m Update Catechism Page Images
+[33m901e3ed[m Add images for "Belief in Allah" and "Belief in Divine Books" modules.
+[33mc31b7c9[m Update catechism page images: Replace external image URLs with local assets.
+[33m2c76b03[m Update image URL for "Belief in Allah" section in Catechism page.
+[33m1c0b1e3[m Add three new sections ("Belief in God's Messengers", "Belief in the Day of Judgment", "Belief in God's Destiny") to the Catechism page, including images for each.
+[33ma9f93c1[m Update Catechism page with new images for the Five Pillars of Islam.
+[33ma5ea3a3[m Add developer bio and attribution to About page and homepage.
+[33m4d5c4b2[m Add Italian language support and update contact email.
+[33m28f4f5f[m Update About page with developer information and translation details
+[33m2c3d411[m Add About Us page with multilingual support.
+[33m685427d[m Update homepage background image
+[33me5a3f73[m Add Albanian translations for several stories in the stories section.  Includes titles, short descriptions, full text, and moral lessons.
+[33mf0048f6[m Add Albanian translation for "Prophet Ibrahim and the Idols" story.
+[33mbf15bbc[m Add Albanian translations to story section
+[33m251c6cb[m Relocate Qibla compass to dedicated page and update its icon.
+[33md95a077[m Enhance Qibla Compass and Home Page Design: Improved Qibla Compass visuals, added sandy texture backgrounds, and restyled home page sections for better aesthetics.
+[33m9205594[m Update home page design: added shadows and blur effects to forms, updated Qibla compass icon, and improved styling.
+[33m5cbd38b[m Add Albanian language support to the stories page.
+[33mb7d2eff[m Improve Albanian translation and add language alias.  Updated Albanian translations for Quran page and added 'language' alias to 'currentLanguage' in context for better readability.
+[33mc8aac8c[m Update Qibla compass image and replace placeholder images in stories with custom SVGs.
+[33m9428317[m Add Qibla compass feature and update story images.
+[33m01cf9ca[m Update homepage background image
+[33m26d5bb8[m Refactor home page and add Qibla compass;  update navigation and add translations for new features.
+[33m355bf5f[m Refactor navigation and add Quran, Stories, and Catechism sections with interactive content.
+[33m6c874b3[m Add Italian translation for Quran section title.
+[33m35f7da3[m Add 15 Surahs to Quran learning section with audio and video, improve UI/UX
+[33me5b10f3[m Agent checkpoint
+[33m8aa04a7[m Add Ilmihal section with ablution guide and five pillars of Islam, plus several Islamic stories for children and additional Quran surahs.
+[33m14f579b[m Add Quran learning module with verse translations, transliterations, and explanations in multiple languages.
+[33m9f489dd[m Enhance Quran memorization tracking and add sound effects.  Improved sound library and implemented verse memorization level updates.
+[33mca2a9fb[m Add Quran learning module with API endpoints for surahs, verses, translations, and user progress tracking.
+[33mf15ce47[m Fix Albanian and Bosnian flags, translate Italian settings, improve "Welcome to ILMBUDS" phrase styling and translation, and perform a comprehensive translation review.
+[33ma039e47[m Translate quiz content into Italian.
+[33mbe3eb33[m Add Italian translation to "History of Islam" quiz.
+[33m0984cd5[m Agent checkpoint
+[33m26f850a[m Add Italian language support
+[33m2307609[m Add Italian language support
+[33m7ddbb9d[m Add Italian language support to settings and quiz content.
+[33m8ae5363[m Add Italian language support to the language switcher.
+[33mafc3fe9[m Add Italian language support to the application.
+[33mc47cd2d[m Update Albanian and Bosnian flags and translations.
+[33m682ca74[m Enhance UI with modern components and add German translations to quiz content.
+[33m78e158f[m Add German and Bosnian translations; improve existing translations.
+[33mdde1fe7[m Remove badges and add donation icon across all supported languages.
+[33maea16d0[m Remove Badges page and add Donate page with multilingual support.
+[33ma1bfe37[m Implement topic-based navigation: clicking a topic on the home page now directly navigates to that topic's dedicated page, removing the home page content.
+[33m5c06afa[m Implement single-page view for topics: Clicking a topic now directly navigates to that topic's page, removing the home page.
+[33m2042030[m Agent checkpoint
+[33m1a671d4[m Add German language support to the application.
+[33m0ef1ab8[m Add language flags and German language support to the language switcher.
+[33m30d5680[m Add German language support with flag and update language selection icons.
+[33madbc735[m Remove unnecessary line from "Let your child learn Islam" tagline.
+[33m6ceb69a[m Update Al-Ikhlas chapter numbering in Home page.
+[33m1d60832[m Add Al-Falak chapter video to home page
+[33mdc980c1[m Reorder home page sections: Move quiz section to the last position.
+[33md2af6e8[m Add developer attribution to homepage header
+[33m1dd00a9[m Add developer attribution to the home page footer.
+[33me686fe3[m Add Al-Ikhlas chapter video to home page
+[33m3c40a50[m Add Al-Fatiha chapter to Quran for Children section.
+[33md6940c2[m Add Al-Fatiha chapter to Quran for Children section with YouTube video integration.
+[33mad649fe[m Enhance UI/UX: Refactor navigation bar and profile badge for a more professional and polished appearance.
+[33m9b70ebe[m Enhance UI/UX: Improve application's visual appeal and professionalism by implementing a refined color scheme, background patterns, and updated styling for cards and components.
+[33mb626835[m Update terminology: Rename "Islamic Games" section to "Ilmihal/Catechism" and update translations.
+[33m329ec29[m Agent checkpoint
+[33mc961ba3[m Add new Islamic games section to home page with metallic 3D styling.  Includes new translations and updated styling for existing sections.
+[33m517e233[m Add "Stories for Children" section to home page.
+[33me2ee68d[m Style: Add metallic 3D icon styling to stories box on home page.
+[33m238cbbe[m Add "Stories for Children" section to home page with multilingual support.
+[33mef5c4eb[m Reduce the size of quiz and Quran squares on the home page for improved visual appeal.
+[33mf1ccc7d[m Add settings page with options for language, sound, notifications, display, and account management.
+[33m1ff2774[m Add settings page with options for sound, notifications, dark mode, animations, and language selection.
+[33m9625d65[m Agent checkpoint
+[33maea7188[m Add page load animations to enhance user experience.
+[33m5b19536[m Update Arabic Bismillah font style to Times New Roman or Arial, lighter weight, with slight letter spacing for improved elegance.
+[33m6acbd20[m Remove styling and animations from Arabic text; display text in plain black.
+[33m5594446[m Refactor: Improve styling and layout of the Arabic Bismillah section on the home page.
+[33m2016b6a[m Refactor: Updated styling of Arabic Bismillah text; removed metallic 3D effects and implemented a cleaner, bolder 3D design with subtle shine effects and hover animation.
+[33m46c9f8b[m Update homepage Arabic text styling:  Implemented a modern 3D material design for the Arabic Bismillah text, enhancing visual appeal and consistency across all language sections.
+[33mcbf4333[m Agent checkpoint
+[33m80f949b[m Update quiz titles and translations: Renamed "Islamic History" quiz to "History of Islam" and updated translations to include Bosnian.
+[33m6e6636b[m Update "Islamic Stories" category to "History of Islam" across application and translations.
+[33mfb32bda[m Agent checkpoint
+[33m2852fb9[m Refactor: Remove hardcoded Bosnian translations; replace with translations from `translations.ts` file.
+[33m3475e11[m Fix: Correct capitalization in Bosnian homepage greeting
+[33m7a0b2ce[m Add initial project structure and basic application setup.
+[33mef85f9c[m Fix: Correct capitalization in Bosnian homepage translation
+[33ma571159[m Add Bosnian language support to the application.
+[33m7848228[m Add Bosnian language support
+[33m5882883[m Add Bosnian language support to the home page.
+[33mcd7fead[m Agent checkpoint
+[33m744e0d7[m Add initial project files and structure.
+[33md4641e2[m Add initial project files and structure.
+[33mf76fc1d[m Fix: Correct Bosnian language selection to prevent defaulting to English.
+[33m6b48e33[m Fix: Correct Bosnian language selection in language switcher and home page
+[33mbb1c063[m Implement initial project structure and setup.
+[33m089b996[m Add Bosnian language support to the language switcher.
+[33m5aabd32[m Add Bosnian language support
+[33m9638b66[m Update Albanian translation for home page and sura folder.
+[33m337e788[m Update title of Quran section to 'The Quran For Children'
+[33m1111b6c[m Add "sure iz kurana" section to the main menu.
+[33md42d334[m Add "Sure Iz Kurana" section to home page
+[33m80383b2[m Update app name to 'ILMBUDS' in translations.
+[33m2af76b3[m Refactor quiz box styling: Remove animation, enhance shiny effect with static gradients and box shadow.
+[33m666b225[m Remove "Categories" and "Your Progress" sections from the home page.
+[33m3ece150[m Enhance quiz box UI: Added metallic shiny effect, removed arrow, centered "QUIZ" text, and improved shadowing for a more visually appealing design.
+[33m323036d[m Update quiz selection UI: Redesign the quiz selection element to a square button with "QUIZ" text, allowing for future topic expansion.
+[33mee48d38[m Update home page styling and remove "4 categories" text.  Improved QUIZ folder appearance and added animation.
+[33m0428e5a[m Update tagline text to "Let your child learn Islam".
+[33me964d88[m Refactor tagline styling:  Improved tagline elegance using italicized Playfair Display font and subtle gradient enhancements.
+[33m27f08b9[m Update tagline styling and text.  Improved the appearance of the tagline "Fun Islamic Quizzes for Kids" with a modern font and gradient effect, and updated the text to "Explore Amazing Islamic Quizzes for Kids!".
+[33m2ebfd60[m Enhance home page quiz folder display with collapsible content and category count.
+[33m576f898[m Agent checkpoint
+[33m2b1b66c[m Enhance home page with interactive quiz topic selection.  Adds a new quiz folder display with topic cards featuring difficulty ratings and improved styling.
+[33md66b1dd[m Refactor: Organize quiz topics into a single 'QUIZ' folder for better maintainability.
+[33mf22cd78[m Organize quiz topics: Moved all quiz topics into a single 'QUIZ' folder for better organization and future expansion.
+[33m8fc4fa1[m Agent checkpoint
+[33mbf503d4[m Add replit.nix configuration for dependency management.
+[33m53e64a7[m Agent checkpoint
+[33mea1019c[m Agent checkpoint
+[33m1f8298d[m Agent checkpoint
+[33m134edc7[m Replace Spider-Man image in Islamic Stories quiz with an image of a mosque in Medina.
+[33mcdfa6ca[m Enhance Arabic text styling by adding a subtle black drop shadow for improved readability.
+[33me7725a6[m Add Arabic Bismillah with animation and styling to the home page.
+[33m10f7116[m Enhance 3D title styling with improved shadows and hover effects.
+[33m8139bc5[m Enhance welcome message styling with 3D effects and new fonts.
+[33m3497a2c[m Improve sound loading: Prioritize local sound files, fallback to external URLs.
+[33m895e997[m Improve sound playback reliability: Add local sound files and implement fallback mechanism for external sound URLs.
+[33m21ed72c[m Agent checkpoint
+[33mcfe4bbb[m Remove 3D metallic icon styling from UI components.
+[33md2e26fa[m Fix: Resolved icon duplication issues in topic display and ensured unique icon rendering.
+[33me0e3447[m Fix: Remove duplicated icons and improve icon rendering in category selector, language switcher, and navbar.
+[33m66806ed[m Fix: Correct overlapping language selection icon in navbar
+[33me010955[m Agent checkpoint
+[33m701fc2c[m Refactor language switcher placement; move from Navbar to App component.
+[33m7fef74b[m Remove school icon from home page header.
+[33m0c76ad4[m Remove shadow effects from all icons
+[33m6f5daa3[m Update icons:  Improved visual appearance of category and language selector icons by applying a metallic 3D style, increasing size, and using distinct colors.  Navbar icons updated with metallic style.
+[33mb8952e6[m Enhance icons: Implemented 3D metallic styling with shadows and increased size for improved visual appeal.
+[33mbfaecfd[m Enhance icons with 3D effects and interactive animations
+[33mec72eeb[m Enhance quiz component UI with 3D effects and improved progress bar.
+[33m754902f[m Enhance UI with 3D animated icons and improved button styles
+[33m72c7a08[m Enhance app icons with 3D effects and animations for improved visual appeal.
+[33mf1905cf[m Translate quiz questions, answers, and categories into Albanian.
+[33m290f351[m Translate quiz content: Added Albanian translations for quiz questions, answers, and UI elements.
+[33m13d088b[m Translate quiz categories and related text to Albanian.
+[33m3294a38[m Fix: Correct navigation after category selection in home page and replace GlobeIcon with custom Icon
+[33mb76c775[m Agent checkpoint
+[33m5343115[m Add Albanian language support.  Includes translation of UI elements and implementation of language switching functionality.
+[33m4586ea5[m Simplify Islamic History quiz questions for children, making them more age-appropriate and easier to understand.
+[33md28e626[m Fix: Add type annotations to QuizProvider context to prevent runtime errors.
+[33m456347f[m Enhance quiz selection: Add loading state and auto-select first quiz in category.
+[33mdc6b021[m Agent checkpoint
+[33m123870a[m Agent checkpoint
+[33m8903f13[m Agent checkpoint
+[33m06bc998[m Add Islamic History quiz with sample questions and answers.
+[33mb393cac[m Update quiz feedback and sounds to include Islamic elements.  Added "Mashallah," "Allahu Akbar," and "tryAgain" audio responses and updated feedback messages.
+[33m84b3f45[m Add hero image to home page
+[33mc831eb0[m Enhance quiz completion screen with animations, mobile vibration, and responsive design; update badge display logic.
+[33m43c5c59[m Improve performance and user experience by lazy loading components and adding a loading indicator; enhance UI/UX with design updates and improved accessibility.
+[33md645a11[m Assistant checkpoint: Remove login screen and authentication
+[33ma3adb4b[m Assistant checkpoint: Add welcome image to home page
+[33m7f683c9[m Add user authentication (login and registration) to the home page.
+[33mcd58f36[m Add user authentication and parent dashboard features.
+[33m025d563[m Add parent dashboard functionality, enabling parents to view and manage their children's progress.  Includes new routes, components, and context updates for user roles and child management.
+[33m73742a4[m Implement parent dashboard: Add functionality for parents to track children's learning progress, including database schema updates and API endpoints.
+[33meb837fb[m Enhance quiz completion screen: Added confetti animation and celebratory sound for perfect scores, improved styling, and updated UI elements for better user experience.
+[33mcac3433[m Update app title display to "ILMBUDS-IslamicQuiz Kids"
+[33me2c94b2[m Shorten homepage title to "ILMBUDS".
+[33m201b06e[m Reduce app title font size
+[33m7edede2[m Update application title to "ILMBUDS-IslamicQuiz Kids"
+[33m516ce2e[m Add initial UI components and routing for Islamic educational quiz app.
+[33m641cdc1[m Checkpoint after starting plan
+[33mb197ab3[m Initial commit

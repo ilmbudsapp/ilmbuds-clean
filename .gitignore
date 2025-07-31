@@ -1,0 +1,30 @@
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+
+# Large files - backups and archives
+*.tar.gz
+*.zip
+*.7z
+*.rar
+*.backup
+
+# Build files and scripts
+ILMBUDS-*
+BUILD-*
+TRANSFER-*
+KREIRANJE-*
+*.ps1
+
+# Gradle large files
+gradle.zip
+gradle-*.zip
+*.jar
+gradle/wrapper/gradle-wrapper.jar
+
+# Large assets
+attached_assets/*.rar
+attached_assets/*.zip
+attached_assets/*.tar.gz

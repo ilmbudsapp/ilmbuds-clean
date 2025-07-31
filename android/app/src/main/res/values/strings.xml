@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ILMBUDS</string>
+    <string name="title_activity_main">ILMBUDS</string>
+    <string name="package_name">com.ilmbuds.app</string>
+    <string name="custom_url_scheme">com.ilmbuds.app</string>
+    <string name="app_description">Islamic educational app for children with quizzes, Quran/Kuran, stories, and Islamic cartoons in multiple languages.</string>
+    <string name="app_keywords">islamic learning, islamic app, quran for kids, kuran, ilmihal, islamic quiz, islam children, islam education, islamic stories</string>
+</resources>

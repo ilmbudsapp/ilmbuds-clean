@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Alphabet Card Export</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body { 
+            background: transparent; 
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .card-container {
+            width: 400px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap');
+        .arabic-font {
+            font-family: 'Scheherazade New', serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="overflow-hidden cursor-pointer border-2 border-blue-200 transition-all duration-300 transform hover:scale-105 hover:shadow-xl bg-gradient-to-br from-blue-50 via-cyan-50 to-sky-50 relative w-full h-full rounded-lg">
+            <!-- Arabic Alphabet background pattern -->
+            <div class="absolute inset-0 opacity-10">
+                <svg class="w-full h-full" viewBox="0 0 400 200" fill="none">
+                    <!-- Arabic calligraphy pattern -->
+                    <defs>
+                        <pattern id="arabicPattern" x="0" y="0" width="80" height="40" patternUnits="userSpaceOnUse">
+                            <g class="text-blue-600" font-family="Scheherazade New, serif" font-size="20">
+                                <text x="20" y="25" fill="currentColor" opacity="0.3">ﺍ</text>
+                                <text x="40" y="25" fill="currentColor" opacity="0.3">ﺏ</text>
+                                <text x="60" y="25" fill="currentColor" opacity="0.3">ﺕ</text>
+                            </g>
+                            <circle cx="40" cy="20" r="2" fill="currentColor" opacity="0.2"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#arabicPattern)" class="text-blue-600"/>
+                    
+                    <!-- Arabic book/scroll silhouette -->
+                    <g class="text-blue-700" transform="translate(280, 100)" opacity="0.15">
+                        <path d="M0 20Q10 10 20 20L20 50Q10 60 0 50Z" fill="currentColor"/>
+                        <path d="M20 20Q30 10 40 20L40 50Q30 60 20 50Z" fill="currentColor"/>
+                        <line x1="5" y1="30" x2="15" y2="30" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                        <line x1="25" y1="30" x2="35" y2="30" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                        <line x1="5" y1="40" x2="15" y2="40" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                        <line x1="25" y1="40" x2="35" y2="40" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                    </g>
+                    
+                    <!-- Decorative Arabic letters -->}
+                    <g class="text-blue-600" transform="translate(50, 40)" opacity="0.2">
+                        <text class="arabic-font" font-size="36" fill="currentColor">ﻱ</text>
+                    </g>
+                    
+                    <g class="text-cyan-600" transform="translate(320, 30)" opacity="0.15">
+                        <text class="arabic-font" font-size="24" fill="currentColor">ﻧ</text>
+                    </g>
+                    
+                    <!-- Geometric Arabic-style ornaments -->}
+                    <g class="text-blue-500" transform="translate(150, 150)" opacity="0.2">
+                        <path d="M0 10L5 0L10 10L5 20L0 10Z" fill="currentColor"/>
+                        <path d="M15 10L20 0L25 10L20 20L15 10Z" fill="currentColor"/>
+                        <circle cx="12.5" cy="10" r="2" fill="currentColor" opacity="0.5"/>
+                    </g>
+                </svg>
+            </div>
+            
+            <div class="p-4 relative z-10 h-full flex items-center">
+                <div class="flex items-center w-full">
+                    <div class="bg-gradient-to-br from-blue-100 to-cyan-100 border-2 border-blue-200 shadow-md p-3 rounded-full mr-4">
+                        <span class="material-icons text-3xl text-blue-700">text_fields</span>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-2xl mb-2 text-blue-800 drop-shadow-sm">
+                            Arabic Alphabet
+                        </h3>
+                        <p class="text-blue-700 text-base mb-3">
+                            Learn Arabic letters with audio pronunciation
+                        </p>
+                        <div class="flex items-center">
+                            <span class="material-icons text-blue-500 mr-2">star</span>
+                            <span class="text-sm text-blue-700 font-medium">
+                                Difficulty Level: 1
+                            </span>
+                            <div class="ml-auto flex space-x-1">
+                                <div class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                                <div class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                                <div class="w-2 h-2 bg-blue-400 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

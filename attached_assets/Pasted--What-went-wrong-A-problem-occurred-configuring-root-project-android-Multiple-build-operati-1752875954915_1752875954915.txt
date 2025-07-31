@@ -1,0 +1,60 @@
+* What went wrong:
+A problem occurred configuring root project 'android'.
+> Multiple build operations failed.
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c146ad95e95679683eceac9f56a97fc8\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\9ec6a4548f532075d0d518b16632e36c\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\b957bdfa5b18452db19bec303d745b46\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c4bb29fd7e6ce20bb926b65acb87d771\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\795a9b9a511543945b358d7f24a8b574\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\5e3ab7b7334ab1534d0bdbde60080766\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c384ee57159c7b0b8258d60fdac168f1\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\a4bc66d42122f11c7569c92fcef2ed1a\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\9fe942eb20409b879f2704e995c63bee\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\af41009bee323b82fa587d9b543c993b\metadata.bin
+      ...and 27 more failures.
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c146ad95e95679683eceac9f56a97fc8\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\9ec6a4548f532075d0d518b16632e36c\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\b957bdfa5b18452db19bec303d745b46\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c4bb29fd7e6ce20bb926b65acb87d771\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\795a9b9a511543945b358d7f24a8b574\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\5e3ab7b7334ab1534d0bdbde60080766\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c384ee57159c7b0b8258d60fdac168f1\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\a4bc66d42122f11c7569c92fcef2ed1a\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\9fe942eb20409b879f2704e995c63bee\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\af41009bee323b82fa587d9b543c993b\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\e754e6e532554e0582ac902741368a2c\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c613706888de5fa0fc10124f09fa502d\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\b605b8cb40feafdc0c128f5dd6891579\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\7c4c342bab62353f7544b2054ed522f3\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\8d253c61131946015a9e9def71d753e7\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\588952e10c922d66fe9da5e2a8daf4ba\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\807161a04c653312e93aae0442928303\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\5f8151157bd5d4561607f9fbe06b0ee4\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\2cc7d86130482fa6377a7158946b8b2d\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\f4dc7f51f6d8605caa96caad56b82452\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c18d18fc942da5d0ac40640e9e53d26d\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\1a9307cce4905dfe87614b3e8ce2ced0\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c3074684458753e93b998b310d6777b3\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\db8f2ad8e551501954cb830e6688a7c5\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\5a90b32348c52bfd3769162a0ee3c43f\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\06ce973070b0e9bc257527b2c539f6b0\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\67322782083fffc0d16d2536d996ee3c\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\df7fc9186d8d64e6ae419e6e674e2208\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\e4c5bed6ab30178ceeae2c1c3bce6b4d\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\fadd6f9a8e5425d1b50347419e1a563e\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\192eb73969be4c1c34bb34fcde728b34\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\8c0275da14ee621b7a3f8ccea83b7120\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\a0b4eeabc75d5b93175bd1ded5fec7b6\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\1a196513b4087ebbb9d6de336225ed2a\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\1b7dff68daa9177cdccc130ece33d44c\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c9579ccadeade613e6d7fbf1c1925064\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\e318cec40aeecce68c8b033772bee059\metadata.bin
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 983ms
+PS C:\ILMBUDS-CLEAN\android>

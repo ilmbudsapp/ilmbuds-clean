@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="300" viewBox="0 0 500 300">
+  <!-- Background - Desert landscape with mosque silhouettes -->
+  <rect width="500" height="300" fill="#f9e7c9"/>
+  <path d="M0,200 Q125,180 250,200 Q375,220 500,200 L500,300 L0,300 Z" fill="#e6c78c"/>
+  
+  <!-- Mosque silhouettes in background -->
+  <path d="M50,200 L50,150 Q65,135 80,150 L80,200 Z" fill="#7c5c3e"/>
+  <path d="M60,150 L60,130 L70,130 L70,150 Z" fill="#7c5c3e"/>
+  <path d="M60,130 Q65,120 70,130" fill="#7c5c3e"/>
+  
+  <path d="M420,200 L420,140 Q435,125 450,140 L450,200 Z" fill="#7c5c3e"/>
+  <path d="M430,140 L430,120 L440,120 L440,140 Z" fill="#7c5c3e"/>
+  <path d="M430,120 Q435,110 440,120" fill="#7c5c3e"/>
+  
+  <!-- Main mosque with minaret in silhouette -->
+  <path d="M150,200 L150,120 L230,120 L230,200 Z" fill="#58483a"/>
+  <path d="M170,120 C170,100 210,100 210,120" fill="#58483a"/>
+  
+  <!-- Minaret -->
+  <rect x="250" y="100" width="20" height="100" fill="#58483a"/>
+  <path d="M250,100 Q260,80 270,100" fill="#58483a"/>
+  
+  <!-- Figure of Bilal -->
+  <g transform="translate(230,160)">
+    <!-- Body/Robe -->
+    <rect x="10" y="20" width="30" height="40" fill="#422d1e"/>
+    
+    <!-- Head with turban -->
+    <circle cx="25" cy="15" r="15" fill="#6b4f38"/>
+    <path d="M10,15 Q25,0 40,15" fill="#8c6f5b"/>
+    
+    <!-- Arms raised in adhan -->
+    <path d="M10,30 L0,10" stroke="#422d1e" stroke-width="4"/>
+    <path d="M40,30 L50,10" stroke="#422d1e" stroke-width="4"/>
+  </g>
+  
+  <!-- Prayer platform/roof -->
+  <rect x="180" y="160" width="140" height="5" fill="#7c5c3e"/>
+  
+  <!-- Text at bottom -->
+  <text x="250" y="280" font-family="Arial" font-size="16" text-anchor="middle" fill="#422d1e">Bilal ibn Rabah - The First Muezzin</text>
+</svg>

@@ -1,0 +1,1262 @@
+// Translations for ILMBUDS Islamic Quiz Kids application
+// English to Albanian translations
+
+export type Language = 'en' | 'sq' | 'bs' | 'de' | 'it'; // English, Albanian (sq), Bosnian (bs), German (de), and Italian (it)
+
+export type TranslationKeys = 
+  | 'general'  // General translations used throughout the app
+  | 'auth'     // Authentication related translations
+  | 'home'     // Home page translations
+  | 'quiz'     // Quiz related translations
+  | 'profile'  // Profile related translations
+  | 'parent'   // Parent dashboard translations
+  | 'badges'   // Badge related translations
+  | 'topics'   // Topics/Categories related translations
+  | 'common'   // Common UI elements
+  | 'ui'       // User interface elements
+  | 'settings' // Settings page translations
+  | 'quran'    // Quran section translations
+
+// Using a more flexible structure to support backward compatibility
+export type TranslationEntry = {
+  [lang: string]: string;
+};
+
+export type Translations = {
+  [key in TranslationKeys]: {
+    [subKey: string]: TranslationEntry
+  }
+};
+
+// The actual translations object
+export const translations: Translations = {
+  general: {
+    appName: {
+      en: 'IlmBuds',
+      sq: 'IlmBuds',
+      bs: 'IlmBuds',
+      de: 'IlmBuds',
+      it: 'IlmBuds'
+    },
+    welcome: {
+      en: 'Welcome to IlmBuds',
+      sq: 'Mirë se vini në IlmBuds',
+      bs: 'Dobrodošli u IlmBuds',
+      de: 'Willkommen bei IlmBuds',
+      it: 'Benvenuto su IlmBuds'
+    },
+    loading: {
+      en: 'Loading...',
+      sq: 'Duke ngarkuar...',
+      bs: 'Učitavanje...',
+      de: 'Laden...',
+      it: 'Caricamento in corso...'
+    },
+    error: {
+      en: 'An error occurred',
+      sq: 'Ndodhi një gabim',
+      bs: 'Došlo je do greške',
+      de: 'Ein Fehler ist aufgetreten',
+      it: 'Si è verificato un errore'
+    },
+    notFound: {
+      en: 'Page not found',
+      sq: 'Faqja nuk u gjet',
+      bs: 'Stranica nije pronađena',
+      de: 'Seite nicht gefunden',
+      it: 'Pagina non trovata'
+    },
+    contactUs: {
+      en: 'Contact Us',
+      sq: 'Na kontaktoni',
+      bs: 'Kontaktirajte nas',
+      de: 'Kontaktiere uns',
+      it: 'Contattaci'
+    }
+  },
+  auth: {
+    loginTitle: {
+      en: 'Login to your account',
+      sq: 'Hyni në llogarinë tuaj',
+      bs: 'Prijavite se na svoj račun',
+      de: 'Melde dich bei deinem Konto an',
+      it: 'Accedi al tuo account'
+    },
+    registerTitle: {
+      en: 'Create a new account',
+      sq: 'Krijoni një llogari të re',
+      bs: 'Kreirajte novi račun',
+      de: 'Erstelle ein neues Konto',
+      it: 'Crea un nuovo account'
+    },
+    username: {
+      en: 'Username',
+      sq: 'Emri i përdoruesit',
+      bs: 'Korisničko ime',
+      de: 'Benutzername',
+      it: 'Nome utente'
+    },
+    password: {
+      en: 'Password',
+      sq: 'Fjalëkalimi',
+      bs: 'Lozinka',
+      de: 'Passwort',
+      it: 'Password'
+    },
+    login: {
+      en: 'Login',
+      sq: 'Hyni',
+      bs: 'Prijava',
+      de: 'Anmelden',
+      it: 'Accedi'
+    },
+    register: {
+      en: 'Register',
+      sq: 'Regjistrohu',
+      bs: 'Registracija',
+      de: 'Registrieren',
+      it: 'Registrati'
+    },
+    parentLogin: {
+      en: 'Parent Login',
+      sq: 'Hyrja e Prindit',
+      bs: 'Prijava za Roditelje',
+      de: 'Eltern-Login',
+      it: 'Accesso Genitori'
+    },
+    childLogin: {
+      en: 'Child Login',
+      sq: 'Hyrja e Fëmijës',
+      bs: 'Prijava za Djecu',
+      de: 'Kinder-Login',
+      it: 'Accesso Bambini'
+    },
+    selectRole: {
+      en: 'Select Your Role',
+      sq: 'Zgjidhni Rolin Tuaj',
+      bs: 'Odaberite Svoju Ulogu',
+      de: 'Wähle Deine Rolle',
+      it: 'Seleziona Il Tuo Ruolo'
+    }
+  },
+  home: {
+    welcome: {
+      en: 'Welcome to IlmBuds',
+      sq: 'Mirë se vini në IlmBuds',
+      bs: 'Dobrodošli u IlmBuds',
+      de: 'Willkommen bei IlmBuds',
+      it: 'Benvenuto su IlmBuds'
+    },
+    myQuizzes: {
+      en: 'My Quizzes',
+      sq: 'Kuizet e Mia',
+      bs: 'Moji Kvizovi',
+      de: 'Meine Quizze',
+      it: 'I Miei Quiz'
+    },
+    quranLearning: {
+      en: 'Quran Learning',
+      sq: 'Mësimi i Kuranit',
+      bs: 'Učenje Kurana',
+      de: 'Koran Lernen',
+      it: 'Apprendimento del Corano'
+    },
+    quizzes: {
+      en: 'Quizzes',
+      sq: 'Kuize',
+      bs: 'Kvizovi',
+      de: 'Quizze',
+      it: 'Quiz'
+    },
+    quran: {
+      en: 'Quran',
+      sq: 'Kurani',
+      bs: 'Kuran',
+      de: 'Koran',
+      it: 'Corano'
+    },
+    catechism: {
+      en: 'Catechism',
+      sq: 'Ilmihal',
+      bs: 'Ilmihal',
+      de: 'Katechismus-Ilmihal',
+      it: 'Catechismo'
+    },
+    beliefs: {
+      en: 'Beliefs',
+      sq: 'Besimi',
+      bs: 'Vjerovanje',
+      de: 'Glaube',
+      it: 'Credenze'
+    },
+    pillars: {
+      en: 'Pillars of Islam',
+      sq: 'Shtyllat e Islamit',
+      bs: 'Stubovi Islama',
+      de: 'Säulen des Islam',
+      it: 'Pilastri dell\'Islam'
+    },
+    stories: {
+      en: 'Islamic Stories',
+      sq: 'Tregime Islame',
+      bs: 'Islamske Priče',
+      de: 'Islamische Geschichten',
+      it: 'Storia dell\'Islam'
+    },
+    learnPrayer: {
+      en: 'Learn Prayer',
+      sq: 'Mëso Namazin',
+      bs: 'Nauči Namaz',
+      de: 'Gebet Lernen',
+      it: 'Impara la Preghiera'
+    },
+    ablutionGuide: {
+      en: 'Ablution Guide',
+      sq: 'Udhëzues i Abdestit',
+      bs: 'Vodič za Abdest',
+      de: 'Anleitung zur Waschung',
+      it: 'Guida all\'Abluzione'
+    },
+    cartoons: {
+      en: 'Islamic Cartoons',
+      sq: 'Filma Vizatimorë Islamikë',
+      bs: 'Islamski Crtani Filmovi',
+      de: 'Islamische Zeichentrickfilme',
+      it: 'Cartoni Animati Islamici'
+    }
+  },
+  quiz: {
+    quizTitle: {
+      en: 'Quiz',
+      sq: 'Kuiz',
+      bs: 'Kviz',
+      de: 'Quiz',
+      it: 'Quiz'
+    },
+    chooseCategory: {
+      en: 'Choose a Category',
+      sq: 'Zgjidhni një Kategori',
+      bs: 'Odaberite Kategoriju',
+      de: 'Wähle eine Kategorie',
+      it: 'Scegli una Categoria'
+    },
+    startQuiz: {
+      en: 'Start Quiz',
+      sq: 'Filloni Kuizin',
+      bs: 'Započni Kviz',
+      de: 'Quiz Starten',
+      it: 'Inizia Quiz'
+    },
+    question: {
+      en: 'Question',
+      sq: 'Pyetje',
+      bs: 'Pitanje',
+      de: 'Frage',
+      it: 'Domanda'
+    },
+    correctAnswer: {
+      en: 'Correct Answer!',
+      sq: 'Përgjigje e Saktë!',
+      bs: 'Tačan Odgovor!',
+      de: 'Richtige Antwort!',
+      it: 'Risposta Corretta!'
+    },
+    wrongAnswer: {
+      en: 'Wrong Answer',
+      sq: 'Përgjigje e Gabuar',
+      bs: 'Netačan Odgovor',
+      de: 'Falsche Antwort',
+      it: 'Risposta Sbagliata'
+    },
+    nextQuestion: {
+      en: 'Next Question',
+      sq: 'Pyetja Tjetër',
+      bs: 'Sljedeće Pitanje',
+      de: 'Nächste Frage',
+      it: 'Prossima Domanda'
+    },
+    quizComplete: {
+      en: 'Quiz Complete!',
+      sq: 'Kuizi u Kompletua!',
+      bs: 'Kviz Završen!',
+      de: 'Quiz Abgeschlossen!',
+      it: 'Quiz Completato!'
+    },
+    yourScore: {
+      en: 'Your Score',
+      sq: 'Rezultati Juaj',
+      bs: 'Vaš Rezultat',
+      de: 'Deine Punktzahl',
+      it: 'Il Tuo Punteggio'
+    },
+    tryAgain: {
+      en: 'Try Again',
+      sq: 'Provo Përsëri',
+      bs: 'Pokušaj Ponovo',
+      de: 'Nochmal Versuchen',
+      it: 'Riprova'
+    },
+    backToQuizzes: {
+      en: 'Back to Quizzes',
+      sq: 'Kthehu te Kuizet',
+      bs: 'Natrag na Kvizove',
+      de: 'Zurück zu den Quizzen',
+      it: 'Torna ai Quiz'
+    },
+    categoryIslam: {
+      en: 'Islam',
+      sq: 'Islami',
+      bs: 'Islam',
+      de: 'Islam',
+      it: 'Islam'
+    },
+    categoryProphets: {
+      en: 'Prophets',
+      sq: 'Pejgamberët',
+      bs: 'Poslanici',
+      de: 'Propheten',
+      it: 'Profeti'
+    },
+    categoryQuran: {
+      en: 'Quran',
+      sq: 'Kurani',
+      bs: 'Kuran',
+      de: 'Koran',
+      it: 'Corano'
+    }
+  },
+  profile: {
+    profileTitle: {
+      en: 'My Profile',
+      sq: 'Profili Im',
+      bs: 'Moj Profil',
+      de: 'Mein Profil',
+      it: 'Il Mio Profilo'
+    },
+    editProfile: {
+      en: 'Edit Profile',
+      sq: 'Redakto Profilin',
+      bs: 'Uredi Profil',
+      de: 'Profil Bearbeiten',
+      it: 'Modifica Profilo'
+    },
+    myProgress: {
+      en: 'My Progress',
+      sq: 'Progresi Im',
+      bs: 'Moj Napredak',
+      de: 'Mein Fortschritt',
+      it: 'I Miei Progressi'
+    },
+    myBadges: {
+      en: 'My Badges',
+      sq: 'Medaljet e Mia',
+      bs: 'Moje Značke',
+      de: 'Meine Abzeichen',
+      it: 'I Miei Badge'
+    },
+    points: {
+      en: 'Points',
+      sq: 'Pikë',
+      bs: 'Bodovi',
+      de: 'Punkte',
+      it: 'Punti'
+    },
+    completedQuizzes: {
+      en: 'Completed Quizzes',
+      sq: 'Kuize të Kompletuara',
+      bs: 'Završeni Kvizovi',
+      de: 'Abgeschlossene Quizze',
+      it: 'Quiz Completati'
+    },
+    achievementBadge: {
+      en: 'Achievement Badge',
+      sq: 'Medalje e Arritjes',
+      bs: 'Značka za Postignuće',
+      de: 'Leistungsabzeichen',
+      it: 'Badge di Successo'
+    }
+  },
+  parent: {
+    dashboardTitle: {
+      en: 'Parent Dashboard',
+      sq: 'Paneli i Prindit',
+      bs: 'Roditeljska Kontrolna Tabla',
+      de: 'Eltern-Dashboard',
+      it: 'Dashboard Genitori'
+    },
+    childProgress: {
+      en: 'Child Progress',
+      sq: 'Progresi i Fëmijës',
+      bs: 'Napredak Djeteta',
+      de: 'Fortschritt des Kindes',
+      it: 'Progressi del Bambino'
+    },
+    addChild: {
+      en: 'Add Child',
+      sq: 'Shto Fëmijë',
+      bs: 'Dodaj Dijete',
+      de: 'Kind Hinzufügen',
+      it: 'Aggiungi Bambino'
+    },
+    viewActivities: {
+      en: 'View Activities',
+      sq: 'Shiko Aktivitetet',
+      bs: 'Pogledaj Aktivnosti',
+      de: 'Aktivitäten Anzeigen',
+      it: 'Visualizza Attività'
+    },
+    childName: {
+      en: 'Child Name',
+      sq: 'Emri i Fëmijës',
+      bs: 'Ime Djeteta',
+      de: 'Name des Kindes',
+      it: 'Nome del Bambino'
+    },
+    lastActive: {
+      en: 'Last Active',
+      sq: 'Aktiv së Fundmi',
+      bs: 'Posljednja Aktivnost',
+      de: 'Zuletzt Aktiv',
+      it: 'Ultima Attività'
+    },
+    completed: {
+      en: 'Completed',
+      sq: 'Kompletuar',
+      bs: 'Završeno',
+      de: 'Abgeschlossen',
+      it: 'Completato'
+    },
+    recentActivity: {
+      en: 'Recent Activity',
+      sq: 'Aktiviteti i Fundit',
+      bs: 'Nedavna Aktivnost',
+      de: 'Neueste Aktivität',
+      it: 'Attività Recente'
+    }
+  },
+  badges: {
+    quizMaster: {
+      en: 'Quiz Master',
+      sq: 'Mjeshtër i Kuizit',
+      bs: 'Majstor Kvizova',
+      de: 'Quiz-Meister',
+      it: 'Maestro dei Quiz'
+    },
+    quranExplorer: {
+      en: 'Quran Explorer',
+      sq: 'Eksplorues i Kuranit',
+      bs: 'Istraživač Kurana',
+      de: 'Koran-Entdecker',
+      it: 'Esploratore del Corano'
+    },
+    prayerChampion: {
+      en: 'Prayer Champion',
+      sq: 'Kampion i Namazit',
+      bs: 'Šampion Namaza',
+      de: 'Gebets-Champion',
+      it: 'Campione della Preghiera'
+    },
+    islamicScholar: {
+      en: 'Islamic Scholar',
+      sq: 'Dijetar Islamik',
+      bs: 'Islamski Učenjak',
+      de: 'Islamischer Gelehrter',
+      it: 'Studioso Islamico'
+    },
+    fastLearner: {
+      en: 'Fast Learner',
+      sq: 'Nxënës i Shpejtë',
+      bs: 'Brzo Učenje',
+      de: 'Schneller Lerner',
+      it: 'Apprendimento Rapido'
+    },
+    knowledgeSeeker: {
+      en: 'Knowledge Seeker',
+      sq: 'Kërkues i Dijes',
+      bs: 'Tragalac za Znanjem',
+      de: 'Wissenssuchender',
+      it: 'Cercatore di Conoscenza'
+    }
+  },
+  topics: {
+    faith: {
+      en: 'Faith',
+      sq: 'Besimi',
+      bs: 'Iman',
+      de: 'Glaube',
+      it: 'Fede'
+    },
+    prayer: {
+      en: 'Prayer',
+      sq: 'Namazi',
+      bs: 'Namaz',
+      de: 'Gebet',
+      it: 'Preghiera'
+    },
+    fasting: {
+      en: 'Fasting',
+      sq: 'Agjërimi',
+      bs: 'Post',
+      de: 'Fasten',
+      it: 'Digiuno'
+    },
+    zakat: {
+      en: 'Zakat',
+      sq: 'Zekati',
+      bs: 'Zekat',
+      de: 'Zakat',
+      it: 'Zakat'
+    },
+    hajj: {
+      en: 'Hajj',
+      sq: 'Haxhi',
+      bs: 'Hadždž',
+      de: 'Hadsch',
+      it: 'Hajj'
+    },
+    prophets: {
+      en: 'Prophets',
+      sq: 'Pejgamberët',
+      bs: 'Poslanici',
+      de: 'Propheten',
+      it: 'Profeti'
+    },
+    islamicHistory: {
+      en: 'Islamic History',
+      sq: 'Historia Islame',
+      bs: 'Islamska Historija',
+      de: 'Islamische Geschichte',
+      it: 'Storia Islamica'
+    },
+    morals: {
+      en: 'Morals & Ethics',
+      sq: 'Moral & Etikë',
+      bs: 'Moral i Etika',
+      de: 'Moral & Ethik',
+      it: 'Morale ed Etica'
+    }
+  },
+  common: {
+    back: {
+      en: 'Back',
+      sq: 'Kthehu',
+      bs: 'Nazad',
+      de: 'Zurück',
+      it: 'Indietro'
+    },
+    next: {
+      en: 'Next',
+      sq: 'Tjetër',
+      bs: 'Sljedeće',
+      de: 'Weiter',
+      it: 'Avanti'
+    },
+    submit: {
+      en: 'Submit',
+      sq: 'Prano',
+      bs: 'Potvrdi',
+      de: 'Absenden',
+      it: 'Invia'
+    },
+    cancel: {
+      en: 'Cancel',
+      sq: 'Anulo',
+      bs: 'Otkaži',
+      de: 'Abbrechen',
+      it: 'Annulla'
+    },
+    save: {
+      en: 'Save',
+      sq: 'Ruaj',
+      bs: 'Sačuvaj',
+      de: 'Speichern',
+      it: 'Salva'
+    },
+    delete: {
+      en: 'Delete',
+      sq: 'Fshi',
+      bs: 'Izbriši',
+      de: 'Löschen',
+      it: 'Elimina'
+    },
+    edit: {
+      en: 'Edit',
+      sq: 'Redakto',
+      bs: 'Uredi',
+      de: 'Bearbeiten',
+      it: 'Modifica'
+    },
+    view: {
+      en: 'View',
+      sq: 'Shiko',
+      bs: 'Pogledaj',
+      de: 'Ansehen',
+      it: 'Visualizza'
+    },
+    home: {
+      en: 'Home',
+      sq: 'Kryefaqja',
+      bs: 'Početna',
+      de: 'Startseite',
+      it: 'Home'
+    },
+    profile: {
+      en: 'Profile',
+      sq: 'Profili',
+      bs: 'Profil',
+      de: 'Profil',
+      it: 'Profilo'
+    },
+    settings: {
+      en: 'Settings',
+      sq: 'Cilësimet',
+      bs: 'Postavke',
+      de: 'Einstellungen',
+      it: 'Impostazioni'
+    },
+    logout: {
+      en: 'Logout',
+      sq: 'Çkyçu',
+      bs: 'Odjava',
+      de: 'Abmelden',
+      it: 'Esci'
+    }
+  },
+  ui: {
+    darkMode: {
+      en: 'Dark Mode',
+      sq: 'Modaliteti i Errët',
+      bs: 'Tamni Način',
+      de: 'Dunkelmodus',
+      it: 'Modalità Scura'
+    },
+    lightMode: {
+      en: 'Light Mode',
+      sq: 'Modaliteti i Ndritshëm',
+      bs: 'Svijetli Način',
+      de: 'Hellmodus',
+      it: 'Modalità Chiara'
+    },
+    searchPlaceholder: {
+      en: 'Search...',
+      sq: 'Kërko...',
+      bs: 'Pretraži...',
+      de: 'Suchen...',
+      it: 'Cerca...'
+    },
+    notifications: {
+      en: 'Notifications',
+      sq: 'Njoftimet',
+      bs: 'Obavještenja',
+      de: 'Benachrichtigungen',
+      it: 'Notifiche'
+    },
+    newBadge: {
+      en: 'New',
+      sq: 'E Re',
+      bs: 'Novo',
+      de: 'Neu',
+      it: 'Nuovo'
+    },
+    loading: {
+      en: 'Loading...',
+      sq: 'Duke ngarkuar...',
+      bs: 'Učitavanje...',
+      de: 'Laden...',
+      it: 'Caricamento...'
+    },
+    language: {
+      en: 'Language',
+      sq: 'Gjuha',
+      bs: 'Jezik',
+      de: 'Sprache',
+      it: 'Lingua'
+    },
+    watch: {
+      en: 'Watch',
+      sq: 'Shiko',
+      bs: 'Gledaj',
+      de: 'Ansehen',
+      it: 'Guarda'
+    }
+  },
+  settings: {
+    settingsTitle: {
+      en: 'Settings',
+      sq: 'Cilësimet',
+      bs: 'Postavke',
+      de: 'Einstellungen',
+      it: 'Impostazioni'
+    },
+    accountSettings: {
+      en: 'Account Settings',
+      sq: 'Cilësimet e Llogarisë',
+      bs: 'Postavke Računa',
+      de: 'Kontoeinstellungen',
+      it: 'Impostazioni Account'
+    },
+    appSettings: {
+      en: 'App Settings',
+      sq: 'Cilësimet e Aplikacionit',
+      bs: 'Postavke Aplikacije',
+      de: 'App-Einstellungen',
+      it: 'Impostazioni App'
+    },
+    notificationSettings: {
+      en: 'Notification Settings',
+      sq: 'Cilësimet e Njoftimeve',
+      bs: 'Postavke Obavještenja',
+      de: 'Benachrichtigungseinstellungen',
+      it: 'Impostazioni Notifiche'
+    },
+    changePassword: {
+      en: 'Change Password',
+      sq: 'Ndrysho Fjalëkalimin',
+      bs: 'Promijeni Lozinku',
+      de: 'Passwort Ändern',
+      it: 'Cambia Password'
+    },
+    privacySettings: {
+      en: 'Privacy Settings',
+      sq: 'Cilësimet e Privatësisë',
+      bs: 'Postavke Privatnosti',
+      de: 'Datenschutzeinstellungen',
+      it: 'Impostazioni Privacy'
+    },
+    helpAndSupport: {
+      en: 'Help & Support',
+      sq: 'Ndihmë & Mbështetje',
+      bs: 'Pomoć i Podrška',
+      de: 'Hilfe & Support',
+      it: 'Aiuto e Supporto'
+    }
+  },
+  quran: {
+    surah: {
+      en: 'Surah',
+      sq: 'Surja',
+      bs: 'Sura',
+      de: 'Sure',
+      it: 'Sura'
+    },
+    juz: {
+      en: 'Juz',
+      sq: 'Xhuz',
+      bs: 'Džuz',
+      de: 'Juz',
+      it: 'Juz'
+    },
+    verse: {
+      en: 'Verse',
+      sq: 'Ajet',
+      bs: 'Ajet',
+      de: 'Vers',
+      it: 'Versetto'
+    },
+    translation: {
+      en: 'Translation',
+      sq: 'Përkthimi',
+      bs: 'Prijevod',
+      de: 'Übersetzung',
+      it: 'Traduzione'
+    },
+    recitation: {
+      en: 'Recitation',
+      sq: 'Këndimi',
+      bs: 'Učenje',
+      de: 'Rezitation',
+      it: 'Recitazione'
+    },
+    memorization: {
+      en: 'Memorization',
+      sq: 'Memorizimi',
+      bs: 'Memorizacija',
+      de: 'Auswendiglernen',
+      it: 'Memorizzazione'
+    },
+    tafsir: {
+      en: 'Tafsir (Explanation)',
+      sq: 'Tefsir (Shpjegim)',
+      bs: 'Tefsir (Objašnjenje)',
+      de: 'Tafsir (Erklärung)',
+      it: 'Tafsir (Spiegazione)'
+    },
+    bookmark: {
+      en: 'Bookmark',
+      sq: 'Faqeshënues',
+      bs: 'Označi',
+      de: 'Lesezeichen',
+      it: 'Segnalibro'
+    },
+    continue: {
+      en: 'Continue Reading',
+      sq: 'Vazhdo Leximin',
+      bs: 'Nastavi Čitanje',
+      de: 'Weiterlesen',
+      it: 'Continua la Lettura'
+    },
+    lastRead: {
+      en: 'Last Read',
+      sq: 'Leximi i Fundit',
+      bs: 'Posljednje Čitanje',
+      de: 'Zuletzt Gelesen',
+      it: 'Ultima Lettura'
+    }
+  }
+};
+
+// Separate quiz content translations for better organization
+export const quizContentTranslations = {
+  // Islamic Beliefs
+  beliefInAllah: {
+    title: {
+      en: 'Belief in Allah',
+      sq: 'Besimi në Allahun',
+      bs: 'Vjerovanje u Allaha',
+      de: 'Glaube an Allah',
+      it: 'Fede in Allah'
+    },
+    questions: [
+      {
+        question: {
+          en: 'Who created everything in the universe?',
+          sq: 'Kush krijoi gjithçka në univers?',
+          bs: 'Ko je stvorio sve u univerzumu?',
+          de: 'Wer hat alles im Universum erschaffen?',
+          it: 'Chi ha creato tutto nell\'universo?'
+        },
+        options: [
+          {
+            en: 'Allah',
+            sq: 'Allahu',
+            bs: 'Allah',
+            de: 'Allah',
+            it: 'Allah'
+          },
+          {
+            en: 'The Sun',
+            sq: 'Dielli',
+            bs: 'Sunce',
+            de: 'Die Sonne',
+            it: 'Il Sole'
+          },
+          {
+            en: 'People',
+            sq: 'Njerëzit',
+            bs: 'Ljudi',
+            de: 'Menschen',
+            it: 'Le persone'
+          },
+          {
+            en: 'Nature',
+            sq: 'Natyra',
+            bs: 'Priroda',
+            de: 'Die Natur',
+            it: 'La natura'
+          }
+        ],
+        correctAnswer: 0,
+        explanation: {
+          en: 'Allah created everything in the universe, including humans, animals, plants, the sun, the moon, and all the stars.',
+          sq: 'Allahu krijoi gjithçka në univers, përfshirë njerëzit, kafshët, bimët, diellin, hënën dhe të gjitha yjet.',
+          bs: 'Allah je stvorio sve u univerzumu, uključujući ljude, životinje, biljke, sunce, mjesec i sve zvijezde.',
+          de: 'Allah hat alles im Universum erschaffen, einschließlich Menschen, Tiere, Pflanzen, die Sonne, den Mond und alle Sterne.',
+          it: 'Allah ha creato tutto nell\'universo, compresi gli esseri umani, gli animali, le piante, il sole, la luna e tutte le stelle.'
+        }
+      },
+      {
+        question: {
+          en: 'What is Tawheed?',
+          sq: 'Çfarë është Teuhidi?',
+          bs: 'Šta je Tevhid?',
+          de: 'Was ist Tawhid?',
+          it: 'Cos\'è il Tawhid?'
+        },
+        options: [
+          {
+            en: 'Believing in many gods',
+            sq: 'Besimi në shumë zota',
+            bs: 'Vjerovanje u mnogo bogova',
+            de: 'Der Glaube an viele Götter',
+            it: 'Credere in molti dei'
+          },
+          {
+            en: 'The belief that Allah is One and has no partners',
+            sq: 'Besimi se Allahu është Një dhe nuk ka partnerë',
+            bs: 'Vjerovanje da je Allah Jedan i da nema sudruga',
+            de: 'Der Glaube, dass Allah Einer ist und keine Partner hat',
+            it: 'La credenza che Allah è Uno e non ha soci'
+          },
+          {
+            en: 'A type of prayer',
+            sq: 'Një lloj lutjeje',
+            bs: 'Vrsta molitve',
+            de: 'Eine Art des Gebets',
+            it: 'Un tipo di preghiera'
+          },
+          {
+            en: 'A holy book',
+            sq: 'Një libër i shenjtë',
+            bs: 'Sveta knjiga',
+            de: 'Ein heiliges Buch',
+            it: 'Un libro sacro'
+          }
+        ],
+        correctAnswer: 1,
+        explanation: {
+          en: 'Tawheed is the belief in the Oneness of Allah. It means believing that Allah is One, without any partners or equals.',
+          sq: 'Teuhidi është besimi në Njësinë e Allahut. Kjo do të thotë të besosh se Allahu është Një, pa ndonjë partner ose të barabartë.',
+          bs: 'Tevhid je vjerovanje u Jednoću Allaha. To znači vjerovati da je Allah Jedan, bez ikakvih sudruga ili ravnih.',
+          de: 'Tawhid ist der Glaube an die Einheit Allahs. Es bedeutet zu glauben, dass Allah Einer ist, ohne Partner oder Gleiche.',
+          it: 'Il Tawhid è la credenza nell\'Unicità di Allah. Significa credere che Allah è Uno, senza soci o uguali.'
+        }
+      },
+      {
+        question: {
+          en: 'How many names does Allah have in Islam?',
+          sq: 'Sa emra ka Allahu në Islam?',
+          bs: 'Koliko imena Allah ima u Islamu?',
+          de: 'Wie viele Namen hat Allah im Islam?',
+          it: 'Quanti nomi ha Allah nell\'Islam?'
+        },
+        options: [
+          {
+            en: '99',
+            sq: '99',
+            bs: '99',
+            de: '99',
+            it: '99'
+          },
+          {
+            en: '33',
+            sq: '33',
+            bs: '33',
+            de: '33',
+            it: '33'
+          },
+          {
+            en: '114',
+            sq: '114',
+            bs: '114',
+            de: '114',
+            it: '114'
+          },
+          {
+            en: '5',
+            sq: '5',
+            bs: '5',
+            de: '5',
+            it: '5'
+          }
+        ],
+        correctAnswer: 0,
+        explanation: {
+          en: 'Allah has 99 beautiful names (Al-Asma ul-Husna) that describe His attributes. For example, Al-Rahman (The Most Merciful) and Al-Alim (The All-Knowing).',
+          sq: 'Allahu ka 99 emra të bukur (Esmaul-Husna) që përshkruajnë atributet e Tij. Për shembull, Er-Rahman (Mëshiruesi) dhe El-Alim (I Gjithëdijshmi).',
+          bs: 'Allah ima 99 lijepih imena (Esmaul-Husna) koja opisuju Njegove osobine. Na primjer, Er-Rahman (Svemilosni) i El-Alim (Sveznajući).',
+          de: 'Allah hat 99 schöne Namen (Al-Asma ul-Husna), die Seine Eigenschaften beschreiben. Zum Beispiel, Ar-Rahman (Der Barmherzige) und Al-Alim (Der Allwissende).',
+          it: 'Allah ha 99 bei nomi (Al-Asma ul-Husna) che descrivono i Suoi attributi. Per esempio, Ar-Rahman (Il Misericordioso) e Al-Alim (L\'Onnisciente).'
+        }
+      },
+      {
+        question: {
+          en: 'Can we see Allah?',
+          sq: 'A mund ta shohim Allahun?',
+          bs: 'Možemo li vidjeti Allaha?',
+          de: 'Können wir Allah sehen?',
+          it: 'Possiamo vedere Allah?'
+        },
+        options: [
+          {
+            en: 'Yes, in our dreams',
+            sq: 'Po, në ëndrrat tona',
+            bs: 'Da, u našim snovima',
+            de: 'Ja, in unseren Träumen',
+            it: 'Sì, nei nostri sogni'
+          },
+          {
+            en: 'Yes, in the mosque',
+            sq: 'Po, në xhami',
+            bs: 'Da, u džamiji',
+            de: 'Ja, in der Moschee',
+            it: 'Sì, nella moschea'
+          },
+          {
+            en: 'No, we cannot see Allah in this world',
+            sq: 'Jo, ne nuk mund ta shohim Allahun në këtë botë',
+            bs: 'Ne, ne možemo vidjeti Allaha na ovom svijetu',
+            de: 'Nein, wir können Allah in dieser Welt nicht sehen',
+            it: 'No, non possiamo vedere Allah in questo mondo'
+          },
+          {
+            en: 'Only on special days',
+            sq: 'Vetëm në ditë të veçanta',
+            bs: 'Samo u posebnim danima',
+            de: 'Nur an besonderen Tagen',
+            it: 'Solo in giorni speciali'
+          }
+        ],
+        correctAnswer: 2,
+        explanation: {
+          en: 'We cannot see Allah in this world. He is beyond our vision and understanding. The believers may see Allah in the Hereafter (Akhirah).',
+          sq: 'Ne nuk mund ta shohim Allahun në këtë botë. Ai është përtej vizionit dhe të kuptuarit tonë. Besimtarët mund ta shohin Allahun në Ahiret.',
+          bs: 'Ne možemo vidjeti Allaha na ovom svijetu. On je izvan našeg vida i razumijevanja. Vjernici mogu vidjeti Allaha na Ahiretu.',
+          de: 'Wir können Allah in dieser Welt nicht sehen. Er ist jenseits unseres Sehvermögens und Verständnisses. Die Gläubigen könnten Allah im Jenseits (Akhirah) sehen.',
+          it: 'Non possiamo vedere Allah in questo mondo. Egli è al di là della nostra visione e comprensione. I credenti potrebbero vedere Allah nell\'Aldilà (Akhirah).'
+        }
+      },
+      {
+        question: {
+          en: 'What does Allah know about us?',
+          sq: 'Çfarë di Allahu për ne?',
+          bs: 'Šta Allah zna o nama?',
+          de: 'Was weiß Allah über uns?',
+          it: 'Cosa sa Allah di noi?'
+        },
+        options: [
+          {
+            en: 'Only what we say out loud',
+            sq: 'Vetëm atë që themi me zë të lartë',
+            bs: 'Samo ono što kažemo naglas',
+            de: 'Nur was wir laut sagen',
+            it: 'Solo ciò che diciamo ad alta voce'
+          },
+          {
+            en: 'Only our good deeds',
+            sq: 'Vetëm veprat tona të mira',
+            bs: 'Samo naša dobra djela',
+            de: 'Nur unsere guten Taten',
+            it: 'Solo le nostre buone azioni'
+          },
+          {
+            en: 'Only what we do in public',
+            sq: 'Vetëm atë që bëjmë në publik',
+            bs: 'Samo ono što radimo u javnosti',
+            de: 'Nur was wir in der Öffentlichkeit tun',
+            it: 'Solo ciò che facciamo in pubblico'
+          },
+          {
+            en: 'Everything, including our thoughts and feelings',
+            sq: 'Gjithçka, përfshirë mendimet dhe ndjenjat tona',
+            bs: 'Sve, uključujući naše misli i osjećanja',
+            de: 'Alles, einschließlich unserer Gedanken und Gefühle',
+            it: 'Tutto, compresi i nostri pensieri e sentimenti'
+          }
+        ],
+        correctAnswer: 3,
+        explanation: {
+          en: 'Allah knows everything about us. He knows our thoughts, feelings, actions, and intentions. Nothing is hidden from Allah.',
+          sq: 'Allahu di gjithçka për ne. Ai di mendimet, ndjenjat, veprimet dhe qëllimet tona. Asgjë nuk është e fshehur nga Allahu.',
+          bs: 'Allah zna sve o nama. On zna naše misli, osjećanja, postupke i namjere. Ništa nije skriveno od Allaha.',
+          de: 'Allah weiß alles über uns. Er kennt unsere Gedanken, Gefühle, Handlungen und Absichten. Nichts ist vor Allah verborgen.',
+          it: 'Allah sa tutto di noi. Conosce i nostri pensieri, sentimenti, azioni e intenzioni. Nulla è nascosto ad Allah.'
+        }
+      }
+    ]
+  },
+  // ... Rest of the translation object remains the same
+};
+
+// Separate category translations for better organization
+export const categoryTranslations = {
+  islamicBeliefs: {
+    en: 'Islamic Beliefs',
+    sq: 'Besimi Islamik',
+    bs: 'Islamsko Vjerovanje',
+    de: 'Islamischer Glaube',
+    it: 'Credenze Islamiche'
+  },
+  prayerAndWorship: {
+    en: 'Prayer & Worship',
+    sq: 'Namazi & Adhurimi',
+    bs: 'Namaz i Ibadet',
+    de: 'Gebet & Anbetung',
+    it: 'Preghiera e Culto'
+  },
+  quranAndHadith: {
+    en: 'Quran & Hadith',
+    sq: 'Kuran & Hadith',
+    bs: 'Kuran i Hadis',
+    de: 'Koran & Hadith',
+    it: 'Corano e Hadith'
+  },
+  prophetsAndCompanions: {
+    en: 'Prophets & Companions',
+    sq: 'Profetët & Sahabet',
+    bs: 'Poslanici i Ashabi',
+    de: 'Propheten & Gefährten',
+    it: 'Profeti e Compagni'
+  },
+  islamicHistory: {
+    en: 'Islamic History',
+    sq: 'Historia Islame',
+    bs: 'Islamska Historija',
+    de: 'Islamische Geschichte',
+    it: 'Storia dell\'Islam'
+  },
+  moralsAndManners: {
+    en: 'Morals & Manners',
+    sq: 'Morali & Sjellja',
+    bs: 'Moral i Ponašanje',
+    de: 'Moral & Manieren',
+    it: 'Morale e Comportamento'
+  },
+  pillarsOfIslam: {
+    en: 'Pillars of Islam',
+    sq: 'Shtyllat e Islamit',
+    bs: 'Stubovi Islama',
+    de: 'Säulen des Islam',
+    it: 'Pilastri dell\'Islam'
+  },
+  lifestyleAndCulture: {
+    en: 'Islamic Lifestyle',
+    sq: 'Stili i Jetesës Islame',
+    bs: 'Islamski Način Života',
+    de: 'Islamischer Lebensstil',
+    it: 'Stile di Vita Islamico'
+  }
+};
+
+// Helper function to get translations with fallback
+export function getTranslation(
+  section: TranslationKeys,
+  key: string,
+  language: Language = 'en'
+): string {
+  // Special handling for Bosnian - currently uses English as base
+  if (language === 'bs' || (typeof window !== 'undefined' && (window as any).isBosanski)) {
+    // First, check if there's a specific Bosnian translation
+    try {
+      const bsTranslation = translations[section][key]['bs'];
+      if (bsTranslation) return bsTranslation;
+    } catch (error) {
+      // No specific Bosnian translation, will fall back to English
+    }
+    
+    // If no specific Bosnian translation, use English
+    try {
+      return translations[section][key]['en'];
+    } catch (error) {
+      return key;
+    }
+  }
+  
+  // Normal case for other languages
+  try {
+    return translations[section][key][language] || translations[section][key]['en'];
+  } catch (error) {
+    console.error(`Translation not found for ${section}.${key} in ${language}`);
+    // Fallback to English if translation not found
+    return translations[section][key]['en'] || key;
+  }
+}
+
+export function getQuizContentTranslation(
+  quizType: string,
+  questionIndex: number,
+  field: 'question' | 'options' | 'explanation',
+  optionIndex?: number,
+  language: Language = 'en'
+): string {
+  try {
+    // Check if quizType exists
+    if (!quizContentTranslations[quizType]) {
+      console.error(`Quiz type ${quizType} not found`);
+      return '';
+    }
+    
+    // Check if questionIndex is valid
+    if (!quizContentTranslations[quizType].questions[questionIndex]) {
+      console.error(`Question index ${questionIndex} not found for quiz ${quizType}`);
+      return '';
+    }
+    
+    // Get the question object
+    const question = quizContentTranslations[quizType].questions[questionIndex];
+    
+    // Special handling for Bosnian
+    if (language === 'bs' || (typeof window !== 'undefined' && (window as any).isBosanski)) {
+      if (field === 'options' && optionIndex !== undefined) {
+        // Return Bosnian translation for option if available, otherwise English
+        return question.options[optionIndex]['bs'] || question.options[optionIndex]['en'];
+      } else {
+        // Return Bosnian translation for question or explanation if available, otherwise English
+        return question[field]['bs'] || question[field]['en'];
+      }
+    }
+    
+    // Handle options field with optionIndex
+    if (field === 'options' && optionIndex !== undefined) {
+      return question.options[optionIndex][language] || question.options[optionIndex]['en'];
+    }
+    
+    // Handle other fields (question, explanation)
+    return question[field][language] || question[field]['en'];
+    
+  } catch (error) {
+    console.error(`Error getting quiz content translation: ${error}`);
+    return '';
+  }
+}
+
+export function getQuizOptionTranslation(
+  quizType: string,
+  questionIndex: number,
+  optionIndex: number,
+  language: Language = 'en'
+): string {
+  try {
+    // Special handling for Bosnian
+    if (language === 'bs' || (typeof window !== 'undefined' && (window as any).isBosanski)) {
+      const option = quizContentTranslations[quizType].questions[questionIndex].options[optionIndex];
+      return option['bs'] || option['en'];
+    }
+    
+    // Normal case for other languages
+    return quizContentTranslations[quizType].questions[questionIndex].options[optionIndex][language] ||
+           quizContentTranslations[quizType].questions[questionIndex].options[optionIndex]['en'];
+  } catch (error) {
+    console.error(`Error getting quiz option translation: ${error}`);
+    return '';
+  }
+}
+
+export function getQuizTitleTranslation(
+  quizType: string,
+  language: Language = 'en'
+): string {
+  try {
+    // Special handling for Bosnian
+    if (language === 'bs' || (typeof window !== 'undefined' && (window as any).isBosanski)) {
+      return quizContentTranslations[quizType].title['bs'] || 
+             quizContentTranslations[quizType].title['en'];
+    }
+    
+    // Normal case for other languages
+    return quizContentTranslations[quizType].title[language] || 
+           quizContentTranslations[quizType].title['en'];
+  } catch (error) {
+    console.error(`Error getting quiz title translation: ${error}`);
+    return '';
+  }
+}
+
+export function getCategoryTranslation(
+  category: string,
+  language: Language = 'en'
+): string {
+  try {
+    // Special handling for Bosnian
+    if (language === 'bs' || (typeof window !== 'undefined' && (window as any).isBosanski)) {
+      return categoryTranslations[category]['bs'] || 
+             categoryTranslations[category]['en'];
+    }
+    
+    // Normal case for other languages
+    return categoryTranslations[category][language] || 
+           categoryTranslations[category]['en'];
+  } catch (error) {
+    console.error(`Error getting category translation: ${error}`);
+    return category;
+  }
+}

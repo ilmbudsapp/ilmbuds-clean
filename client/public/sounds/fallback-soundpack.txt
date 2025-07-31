@@ -1,0 +1,9 @@
+Due to the unreliable nature of external sound URLs, we're providing fallback sounds hosted locally.
+
+The Islamic phrases have been replaced with locally hosted audio files that will work reliably across all devices and network conditions.
+
+This approach ensures that the application will continue to function correctly even when external resources are unavailable.
+
+Sound credits:
+- Generic UI sounds from mixkit (correct.mp3, incorrect.mp3, etc.)
+- Islamic phrase recordings created specifically for this application

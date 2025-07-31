@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartoons Card Export</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body { 
+            background: transparent; 
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .card-container {
+            width: 400px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="overflow-hidden cursor-pointer border-2 border-purple-200 transition-all duration-300 transform hover:scale-105 hover:shadow-xl bg-gradient-to-br from-purple-50 via-pink-50 to-indigo-50 relative w-full h-full rounded-lg">
+            <!-- Cartoons background pattern -->
+            <div class="absolute inset-0 opacity-10">
+                <svg class="w-full h-full" viewBox="0 0 400 200" fill="none">
+                    <!-- Playful cartoon elements -->
+                    <defs>
+                        <pattern id="cartoonPattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+                            <circle cx="30" cy="30" r="8" fill="currentColor" opacity="0.2"/>
+                            <path d="M20 20L25 30L20 40L15 30L20 20Z" fill="currentColor" opacity="0.3"/>
+                            <path d="M40 20L45 30L40 40L35 30L40 20Z" fill="currentColor" opacity="0.3"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#cartoonPattern)" class="text-purple-600"/>
+                    
+                    <!-- TV/Screen silhouette -->
+                    <g class="text-purple-700" transform="translate(280, 100)" opacity="0.15">
+                        <rect x="0" y="0" width="80" height="60" rx="8" fill="currentColor"/>
+                        <rect x="5" y="5" width="70" height="50" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="40" cy="30" r="3" fill="currentColor" opacity="0.5"/>
+                        <rect x="35" y="65" width="10" height="8" fill="currentColor"/>
+                        <rect x="20" y="70" width="40" height="5" rx="2" fill="currentColor"/>
+                    </g>
+                    
+                    <!-- Playful stars and shapes -->
+                    <g class="text-purple-600" transform="translate(50, 30)" opacity="0.2">
+                        <path d="M15 5L18 12L25 12L20 17L22 24L15 20L8 24L10 17L5 12L12 12Z" fill="currentColor"/>
+                        <circle cx="35" cy="15" r="6" fill="currentColor" opacity="0.3"/>
+                        <path d="M50 10L55 15L50 20L45 15L50 10Z" fill="currentColor"/>
+                    </g>
+                    
+                    <!-- Fun decorative elements -->
+                    <g class="text-pink-500" transform="translate(320, 40)" opacity="0.15">
+                        <circle cx="10" cy="10" r="5" fill="currentColor"/>
+                        <circle cx="25" cy="20" r="7" fill="currentColor" opacity="0.6"/>
+                        <circle cx="15" cy="35" r="4" fill="currentColor"/>
+                    </g>
+                </svg>
+            </div>
+            
+            <div class="p-4 relative z-10 h-full flex items-center">
+                <div class="flex items-center w-full">
+                    <div class="bg-gradient-to-br from-purple-100 to-pink-100 border-2 border-purple-200 shadow-md p-3 rounded-full mr-4">
+                        <span class="material-icons text-3xl text-purple-700">play_circle</span>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-bold text-2xl mb-2 text-purple-800 drop-shadow-sm">
+                            Cartoons
+                        </h3>
+                        <p class="text-purple-700 text-base mb-3">
+                            Watch fun Islamic educational cartoons
+                        </p>
+                        <div class="flex items-center">
+                            <span class="material-icons text-purple-500 mr-2">star</span>
+                            <span class="text-sm text-purple-700 font-medium">
+                                Difficulty Level: 1
+                            </span>
+                            <div class="ml-auto flex space-x-1">
+                                <div class="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></div>
+                                <div class="w-2 h-2 bg-pink-400 rounded-full animate-pulse" style="animation-delay: 0.2s"></div>
+                                <div class="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style="animation-delay: 0.4s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

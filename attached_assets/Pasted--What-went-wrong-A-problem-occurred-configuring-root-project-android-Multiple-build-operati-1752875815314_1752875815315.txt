@@ -1,0 +1,124 @@
+* What went wrong:
+A problem occurred configuring root project 'android'.
+> Multiple build operations failed.
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\a4bc66d42122f11c7569c92fcef2ed1a\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\9ec6a4548f532075d0d518b16632e36c\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c146ad95e95679683eceac9f56a97fc8\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\5e3ab7b7334ab1534d0bdbde60080766\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\9fe942eb20409b879f2704e995c63bee\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c384ee57159c7b0b8258d60fdac168f1\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\795a9b9a511543945b358d7f24a8b574\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c4bb29fd7e6ce20bb926b65acb87d771\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\e754e6e532554e0582ac902741368a2c\metadata.bin
+      Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\af41009bee323b82fa587d9b543c993b\metadata.bin
+      ...and 27 more failures.
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\a4bc66d42122f11c7569c92fcef2ed1a\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\9ec6a4548f532075d0d518b16632e36c\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c146ad95e95679683eceac9f56a97fc8\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\5e3ab7b7334ab1534d0bdbde60080766\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\9fe942eb20409b879f2704e995c63bee\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c384ee57159c7b0b8258d60fdac168f1\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\795a9b9a511543945b358d7f24a8b574\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c4bb29fd7e6ce20bb926b65acb87d771\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\e754e6e532554e0582ac902741368a2c\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\af41009bee323b82fa587d9b543c993b\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\b957bdfa5b18452db19bec303d745b46\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c613706888de5fa0fc10124f09fa502d\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\b605b8cb40feafdc0c128f5dd6891579\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\7c4c342bab62353f7544b2054ed522f3\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\8d253c61131946015a9e9def71d753e7\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\588952e10c922d66fe9da5e2a8daf4ba\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\2cc7d86130482fa6377a7158946b8b2d\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\807161a04c653312e93aae0442928303\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c18d18fc942da5d0ac40640e9e53d26d\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\5f8151157bd5d4561607f9fbe06b0ee4\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\1a9307cce4905dfe87614b3e8ce2ced0\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\192eb73969be4c1c34bb34fcde728b34\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\1b7dff68daa9177cdccc130ece33d44c\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\f4dc7f51f6d8605caa96caad56b82452\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\a0b4eeabc75d5b93175bd1ded5fec7b6\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c3074684458753e93b998b310d6777b3\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\db8f2ad8e551501954cb830e6688a7c5\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\1a196513b4087ebbb9d6de336225ed2a\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\fadd6f9a8e5425d1b50347419e1a563e\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\5a90b32348c52bfd3769162a0ee3c43f\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\06ce973070b0e9bc257527b2c539f6b0\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\67322782083fffc0d16d2536d996ee3c\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\e4c5bed6ab30178ceeae2c1c3bce6b4d\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\df7fc9186d8d64e6ae419e6e674e2208\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\8c0275da14ee621b7a3f8ccea83b7120\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\c9579ccadeade613e6d7fbf1c1925064\metadata.bin
+   > Could not read workspace metadata from C:\Users\User\.gradle\caches\8.9\transforms\e318cec40aeecce68c8b033772bee059\metadata.bin
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 16s
+PS C:\ILMBUDS-APP\android> .\gradlew.bat assembleRelease --no-daemon --offline=false
+
+Command-line option '--offline' does not take an argument.
+
+USAGE: gradlew [option...] [task...]
+
+-?, -h, --help                     Shows this help message.
+-a, --no-rebuild                   Do not rebuild project dependencies.
+-b, --build-file                   Specify the build file. [deprecated]
+--build-cache                      Enables the Gradle build cache. Gradle will try to reuse outputs from previous builds.
+--no-build-cache                   Disables the Gradle build cache.
+-c, --settings-file                Specify the settings file. [deprecated]
+--configuration-cache              Enables the configuration cache. Gradle will try to reuse the build configuration from previous builds.
+--no-configuration-cache           Disables the configuration cache.
+--configuration-cache-problems     Configures how the configuration cache handles problems (fail or warn). Defaults to fail.
+--configure-on-demand              Configure necessary projects only. Gradle will attempt to reduce configuration time for large multi-project builds. [incubating]
+--no-configure-on-demand           Disables the use of configuration on demand. [incubating]
+--console                          Specifies which type of console output to generate. Values are 'plain', 'auto' (default), 'rich' or 'verbose'.
+--continue                         Continue task execution after a task failure.
+--no-continue                      Stop task execution after a task failure.
+-D, --system-prop                  Set system property of the JVM (e.g. -Dmyprop=myvalue).
+-d, --debug                        Log in debug mode (includes normal stacktrace).
+--daemon                           Uses the Gradle daemon to run the build. Starts the daemon if not running.
+--no-daemon                        Do not use the Gradle daemon to run the build. Useful occasionally if you have configured Gradle to always run with the daemon by default.
+--export-keys                      Exports the public keys used for dependency verification.
+-F, --dependency-verification      Configures the dependency verification mode. Values are 'strict', 'lenient' or 'off'.
+--foreground                       Starts the Gradle daemon in the foreground.
+-g, --gradle-user-home             Specifies the Gradle user home directory. Defaults to ~/.gradle
+-I, --init-script                  Specify an initialization script.
+-i, --info                         Set log level to info.
+--include-build                    Include the specified build in the composite.
+-M, --write-verification-metadata  Generates checksums for dependencies used in the project (comma-separated list)
+-m, --dry-run                      Run the builds with all task actions disabled.
+--max-workers                      Configure the number of concurrent workers Gradle is allowed to use.
+--offline                          Execute the build without accessing network resources.
+-P, --project-prop                 Set project property for the build script (e.g. -Pmyprop=myvalue).
+-p, --project-dir                  Specifies the start directory for Gradle. Defaults to current directory.
+--parallel                         Build projects in parallel. Gradle will attempt to determine the optimal number of executor threads to use.
+--no-parallel                      Disables parallel execution to build projects.
+--priority                         Specifies the scheduling priority for the Gradle daemon and all processes launched by it. Values are 'normal' (default) or 'low'
+--profile                          Profile build execution time and generates a report in the <build_dir>/reports/profile directory.
+--project-cache-dir                Specify the project-specific cache directory. Defaults to .gradle in the root project directory.
+-q, --quiet                        Log errors only.
+--refresh-keys                     Refresh the public keys used for dependency verification.
+--rerun-tasks                      Ignore previously cached task results.
+-S, --full-stacktrace              Print out the full (very verbose) stacktrace for all exceptions.
+-s, --stacktrace                   Print out the stacktrace for all exceptions.
+--scan                             Creates a build scan. Gradle will emit a warning if the build scan plugin has not been applied. (https://gradle.com/build-scans)
+--no-scan                          Disables the creation of a build scan. For more information about build scans, please visit https://gradle.com/build-scans.
+--status                           Shows status of running and recently stopped Gradle daemon(s).
+--stop                             Stops the Gradle daemon if it is running.
+-t, --continuous                   Enables continuous build. Gradle does not exit and will re-execute tasks when task file inputs change.
+-U, --refresh-dependencies         Refresh the state of dependencies.
+--update-locks                     Perform a partial update of the dependency lock, letting passed in module notations change version. [incubating]
+-V, --show-version                 Print version info and continue.
+-v, --version                      Print version info and exit.
+-w, --warn                         Set log level to warn.
+--warning-mode                     Specifies which mode of warnings to generate. Values are 'all', 'fail', 'summary'(default) or 'none'
+--watch-fs                         Enables watching the file system for changes, allowing data about the file system to be re-used for the next build.
+--no-watch-fs                      Disables watching the file system.
+--write-locks                      Persists dependency resolution for locked configurations, ignoring existing locking information if it exists
+-x, --exclude-task                 Specify a task to be excluded from execution.
+--                                 Signals the end of built-in options. Gradle parses subsequent parameters as only tasks or task options.
+
+PS C:\ILMBUDS-APP\android>
