@@ -1,0 +1,100 @@
+# Alternative Codemagic configuration with different keystore approaches
+
+workflows:
+  # Option 1: Simple keystore reference (no quotes)
+  android-build-v1:
+    name: ILMBUDS Build v1 - Simple Reference
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      android_signing:
+        - ilmbuds_keystore
+      vars:
+        NODE_VERSION: "20"
+      node: 20
+    scripts:
+      - name: Install dependencies
+        script: npm ci
+      - name: Build React
+        script: npm run build
+      - name: Sync Capacitor
+        script: npx cap sync android
+      - name: Build AAB
+        script: |
+          cd android
+          ./gradlew bundleRelease
+    artifacts:
+      - android/app/build/outputs/bundle/release/*.aab
+
+  # Option 2: Object format keystore reference  
+  android-build-v2:
+    name: ILMBUDS Build v2 - Object Format
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      android_signing:
+        keystore_reference: ilmbuds_keystore
+      vars:
+        NODE_VERSION: "20"
+      node: 20
+    scripts:
+      - name: Install dependencies
+        script: npm ci
+      - name: Build React
+        script: npm run build
+      - name: Sync Capacitor
+        script: npx cap sync android
+      - name: Build AAB
+        script: |
+          cd android
+          ./gradlew bundleRelease
+    artifacts:
+      - android/app/build/outputs/bundle/release/*.aab
+
+  # Option 3: Manual environment variables approach
+  android-build-v3:
+    name: ILMBUDS Build v3 - Manual Vars
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      vars:
+        NODE_VERSION: "20"
+        # Manual keystore setup - you need to set these in Codemagic dashboard
+        CM_KEYSTORE_PATH: $CM_BUILD_DIR/keystore.jks
+        CM_KEYSTORE_PASSWORD: $KEYSTORE_PASSWORD
+        CM_KEY_ALIAS: upload
+        CM_KEY_PASSWORD: $KEY_PASSWORD
+      node: 20
+    scripts:
+      - name: Install dependencies
+        script: npm ci
+      - name: Build React
+        script: npm run build
+      - name: Sync Capacitor
+        script: npx cap sync android
+      - name: Setup manual keystore
+        script: |
+          # This assumes keystore is uploaded as environment file
+          echo "Setting up keystore manually"
+          mkdir -p $HOME/.android
+          # Keystore should be available as environment variable or file
+      - name: Build AAB with manual signing
+        script: |
+          cd android
+          ./gradlew bundleRelease \
+            -Pandroid.injected.signing.store.file=$CM_KEYSTORE_PATH \
+            -Pandroid.injected.signing.store.password=$CM_KEYSTORE_PASSWORD \
+            -Pandroid.injected.signing.key.alias=$CM_KEY_ALIAS \
+            -Pandroid.injected.signing.key.password=$CM_KEY_PASSWORD
+    artifacts:
+      - android/app/build/outputs/bundle/release/*.aab
+
+triggers:
+  - name: Build on main
+    events:
+      - push
+    branch_patterns:
+      - pattern: main
+        include: true
+        source: true
+    workflow: android-build-v1  # Change this to test different versions

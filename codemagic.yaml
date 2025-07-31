@@ -11,10 +11,7 @@ workflows:
         CAPACITOR_ANDROID_GRADLE_VERSION: "8.4"
         # Build configuration
         BUILD_VARIANT: "release"
-      groups:
-        - keystore  # Group-based keystore access
-      android_signing:
-        - keystore_reference: "ilmbuds_keystore"
+      android_signing: ilmbuds_keystore
       node: 20
     cache:
       cache_paths:
