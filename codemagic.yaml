@@ -1,0 +1,137 @@
+workflows:
+  android-capacitor-build:
+    name: ILMBUDS Android AAB & APK Build
+    max_build_duration: 60
+    instance_type: mac_mini_m1
+    environment:
+      android_signing:
+        - ilmbuds_keystore
+      vars:
+        # Node.js and build environment
+        NODE_VERSION: "20"
+        # Capacitor configuration
+        CAPACITOR_ANDROID_GRADLE_VERSION: "8.4"
+        # Build configuration
+        BUILD_VARIANT: "release"
+      node: 20
+    cache:
+      cache_paths:
+        - $HOME/.gradle/caches
+        - node_modules
+    scripts:
+      - name: Set up Android SDK
+        script: |
+          # Android SDK is pre-installed on Codemagic
+          echo "Android SDK setup complete"
+          
+      - name: Install Node.js dependencies
+        script: |
+          npm ci
+          
+      - name: Build React app
+        script: |
+          npm run build
+          
+      - name: Sync Capacitor
+        script: |
+          npx cap sync android
+          
+      - name: Set up Android signing
+        script: |
+          # Keystore will be available via Android signing configuration
+          echo "Keystore configured via Codemagic Android signing"
+          
+      - name: Build Android AAB (Release)
+        script: |
+          cd android
+          ./gradlew bundleRelease
+          
+      - name: Build Android APK (Debug for testing)
+        script: |
+          cd android
+          ./gradlew assembleDebug
+          
+      - name: Build Android APK (Release)
+        script: |
+          cd android
+          ./gradlew assembleRelease
+          
+    artifacts:
+      - android/app/build/outputs/bundle/release/*.aab
+      - android/app/build/outputs/apk/release/*.apk
+      - android/app/build/outputs/apk/debug/*.apk
+      
+    publishing:
+      email:
+        recipients:
+          - agron.osmani@example.com  # Replace with your email
+        notify:
+          success: true
+          failure: true
+      google_play:
+        # Uncomment and configure for automatic Google Play publishing
+        # credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
+        # track: internal  # or alpha, beta, production
+        # submit_as_draft: true
+
+  # Additional workflow for testing builds without signing
+  android-debug-build:
+    name: ILMBUDS Android Debug Build
+    max_build_duration: 30
+    instance_type: mac_mini_m1
+    environment:
+      vars:
+        NODE_VERSION: "20"
+      node: 20
+    cache:
+      cache_paths:
+        - node_modules
+        - $HOME/.gradle/caches
+    scripts:
+      - name: Install dependencies
+        script: |
+          npm ci
+          
+      - name: Build React app
+        script: |
+          npm run build
+          
+      - name: Sync Capacitor
+        script: |
+          npx cap sync android
+          
+      - name: Build debug APK
+        script: |
+          cd android
+          ./gradlew assembleDebug
+          
+    artifacts:
+      - android/app/build/outputs/apk/debug/*.apk
+      
+    publishing:
+      email:
+        recipients:
+          - agron.osmani@example.com  # Replace with your email
+        notify:
+          success: true
+          failure: true
+
+# Trigger configuration
+triggers:
+  - name: Automatic build on main branch
+    events:
+      - push
+    branch_patterns:
+      - pattern: main
+        include: true
+        source: true
+    workflow: android-capacitor-build
+    
+  - name: Debug build on development
+    events:
+      - push
+    branch_patterns:
+      - pattern: develop
+        include: true
+        source: true
+    workflow: android-debug-build
